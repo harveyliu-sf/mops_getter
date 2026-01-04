@@ -62,13 +62,36 @@ def http_post_json(url: str, payload: Dict[str, Any]) -> Dict[str, Any]:
     r.raise_for_status()
     return r.json()
 
-
 def load_state(state_path: str) -> Dict[str, Any]:
-    if not os.path.exists(state_path):
-        return {"seen_keys": []}
-    with open(state_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    """
+    容錯讀取 state.json：
+    - 不存在 -> 回傳預設
+    - 空檔/壞 JSON -> 印出原始內容，回傳預設（避免 workflow 直接掛掉）
+    """
+    default = {"seen_keys": []}
 
+    if not os.path.exists(state_path):
+        return default
+
+    try:
+        with open(state_path, "r", encoding="utf-8") as f:
+            raw = f.read()
+            if not raw.strip():
+                print(f"[warn] state file exists but empty: {state_path}")
+                return default
+            return json.loads(raw)
+    except Exception as e:
+        # 印出檔案內容（最多前 5000 字，避免 log 爆）
+        try:
+            with open(state_path, "r", encoding="utf-8") as f:
+                raw2 = f.read()
+            print(f"[warn] failed to parse state json: {state_path} err={e}")
+            print("[warn] state raw (head 5000):")
+            print(raw2[:5000])
+        except Exception as e2:
+            print(f"[warn] also failed to read raw state: err={e2}")
+
+        return default
 
 def save_json(path: str, obj: Any) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
