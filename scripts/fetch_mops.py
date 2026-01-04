@@ -25,8 +25,7 @@ def roc_year(dt: datetime) -> int:
 
 def normalize_text(s: str) -> str:
     # 把 \r\n 等換行、連續空白壓成單一空白
-    s = s.replace("\r\n", "\n").replace("\r", "\n")
-    s = re.sub(r"\s+", " ", s).strip()
+    s = s.replace("\r\n", "").replace("\r", "").replace(" ", "")
     return s
 
 
