@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Debug: show commit + script hash
+      - name: Debug=>show commit + script hash
         run: |
           echo "SHA=${GITHUB_SHA}"
           git rev-parse HEAD
