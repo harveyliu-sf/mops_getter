@@ -16,6 +16,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Debug: show commit + script hash
+        run: |
+          echo "SHA=${GITHUB_SHA}"
+          git rev-parse HEAD
+          git log -1 --oneline
+          echo "---- fetch_mops.py line count + sha256 ----"
+          wc -l scripts/fetch_mops.py
+          sha256sum scripts/fetch_mops.py
+          echo "---- show load_state lines ----"
+          nl -ba scripts/fetch_mops.py | sed -n '50,90p'
+
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
