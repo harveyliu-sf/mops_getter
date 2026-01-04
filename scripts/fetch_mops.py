@@ -167,7 +167,9 @@ def main():
         company_name = normalize_text(str(row[3]))
         subject_raw = str(row[4])
         subject = normalize_text(subject_raw)
-        print(subject)
+
+        print(f"[info] data=> speech_date: {speech_date}, speech_time: {speech_time}, company_name: {company_name}, subject: {subject}")
+        
         detail_meta = row[5] if isinstance(row[5], dict) else {}
         params = (detail_meta.get("parameters") or {}) if isinstance(detail_meta, dict) else {}
         if not isinstance(params, dict):
