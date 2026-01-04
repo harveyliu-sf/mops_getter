@@ -1,1 +1,19 @@
-
+{
+  "meta": {
+    "run_at_tw": "2026-01-04 22:14:58",
+    "query": {
+      "year": "115",
+      "month": "1",
+      "day": "04"
+    },
+    "keywords": [
+      "自結合併營收",
+      "取得廠務設備",
+      "取得機器設備",
+      "公司債"
+    ],
+    "matched_count": 0,
+    "new_matched_count": 0
+  },
+  "items": []
+}
