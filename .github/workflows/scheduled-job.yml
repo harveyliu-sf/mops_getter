@@ -1,0 +1,17 @@
+name: scheduled-job
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # 每小時整點
+  workflow_dispatch:     # 可手動觸發（強烈建議保留）
+
+jobs:
+  run-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run script
+        run: |
+          echo "Hello, scheduled job"
