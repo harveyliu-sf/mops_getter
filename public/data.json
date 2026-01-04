@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-05 02:51:20",
+    "run_at_tw": "2026-01-05 03:14:44",
     "query": {
       "year": "115",
       "month": "1",
@@ -28,10 +28,10 @@
         "上市管理"
       ],
       "detail_params": {
-        "enterDate": "1141231",
         "serialNumber": 1,
-        "companyId": "3715",
-        "marketKind": "sii"
+        "enterDate": "1141231",
+        "marketKind": "sii",
+        "companyId": "3715"
       },
       "detail": {
         "code": 200,
@@ -107,9 +107,9 @@
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/01/05 02:51:19"
+        "datetime": "115/01/05 03:14:44"
       },
-      "fetched_at_tw": "2026-01-05 02:51:20"
+      "fetched_at_tw": "2026-01-05 03:14:44"
     }
   ]
 }
