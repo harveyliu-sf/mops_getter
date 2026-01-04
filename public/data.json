@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-04 23:04:03",
+    "run_at_tw": "2026-01-04 23:26:29",
     "query": {
       "year": "115",
       "month": "1",
@@ -14,7 +14,7 @@
       "公司債"
     ],
     "matched_count": 1,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -65,51 +65,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/01/04 23:04:03"
+        "datetime": "115/01/04 23:26:30"
       },
-      "fetched_at_tw": "2026-01-04 23:04:03"
+      "fetched_at_tw": "2026-01-04 23:26:29"
     }
   ]
 }
