@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MOPS 關鍵字公告監控</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 24px; }
+    .meta { margin-bottom: 12px; line-height: 1.6; }
+    input { padding: 8px; width: 320px; max-width: 100%; }
+    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
+    th { position: sticky; top: 0; background: #fafafa; }
+    .kw { color: #444; font-size: 12px; }
+    details pre { white-space: pre-wrap; word-break: break-word; background: #f7f7f7; padding: 8px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>MOPS 關鍵字公告監控</h1>
+
+  <div class="meta" id="meta">讀取中...</div>
+
+  <label>
+    搜尋（公司/主旨/關鍵字）：
+    <input id="q" placeholder="例如：鴻海 / 公司債 / 自結合併營收" />
+  </label>
+
+  <table>
+    <thead>
+      <tr>
+        <th>發言日</th>
+        <th>時間</th>
+        <th>公司</th>
+        <th>主旨</th>
+        <th>命中關鍵字</th>
+        <th>Detail</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+<script>
+async function main() {
+  const res = await fetch("./data.json", { cache: "no-store" });
+  const data = await res.json();
+
+  const meta = data.meta || {};
+  const items = data.items || [];
+
+  document.getElementById("meta").innerText =
+    `執行時間（台灣）：${meta.run_at_tw || "-"} ｜ 查詢：${JSON.stringify(meta.query || {})} ｜ 關鍵字：${(meta.keywords||[]).join(", ")} ｜ 命中：${meta.matched_count||0} ｜ 新命中：${meta.new_matched_count||0}`;
+
+  const tbody = document.getElementById("tbody");
+  const q = document.getElementById("q");
+
+  function render() {
+    const term = (q.value || "").trim().toLowerCase();
+    tbody.innerHTML = "";
+
+    const filtered = !term ? items : items.filter(it => {
+      const s = [
+        it.company_id, it.company_name, it.subject,
+        (it.matched_keywords||[]).join(" "),
+        JSON.stringify(it.detail_params||{})
+      ].join(" ").toLowerCase();
+      return s.includes(term);
+    });
+
+    for (const it of filtered) {
+      const tr = document.createElement("tr");
+
+      const tdDate = document.createElement("td");
+      tdDate.textContent = it.speech_date || "";
+      tr.appendChild(tdDate);
+
+      const tdTime = document.createElement("td");
+      tdTime.textContent = it.speech_time || "";
+      tr.appendChild(tdTime);
+
+      const tdCo = document.createElement("td");
+      tdCo.innerHTML = `<div>${it.company_id || ""}</div><div>${it.company_name || ""}</div>`;
+      tr.appendChild(tdCo);
+
+      const tdSub = document.createElement("td");
+      tdSub.textContent = it.subject || "";
+      tr.appendChild(tdSub);
+
+      const tdKw = document.createElement("td");
+      tdKw.innerHTML = `<div class="kw">${(it.matched_keywords||[]).join(", ")}</div>`;
+      tr.appendChild(tdKw);
+
+      const tdDetail = document.createElement("td");
+      const d = document.createElement("details");
+      const s = document.createElement("summary");
+      s.textContent = "展開";
+      const pre = document.createElement("pre");
+      pre.textContent = JSON.stringify(it.detail, null, 2);
+      d.appendChild(s);
+      d.appendChild(pre);
+      tdDetail.appendChild(d);
+      tr.appendChild(tdDetail);
+
+      tbody.appendChild(tr);
+    }
+  }
+
+  q.addEventListener("input", render);
+  render();
+}
+
+main().catch(err => {
+  document.getElementById("meta").innerText = "讀取失敗：" + err;
+});
+</script>
+</body>
+</html>
