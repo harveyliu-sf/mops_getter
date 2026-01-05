@@ -252,7 +252,7 @@ def main():
         lines = []
         lines.append(f"📣 MOPS 新公告命中 {len(new_matched_items)} 筆（{speech_date}）")
         for it in new_matched_items[:10]:  # 避免一次太長
-            lines.append(f"- {it['company_id']} {it['company_name']} {it['speech_time']} {it['subject']}（{','.join(it['matched_keywords'])}）")
+            lines.append(f"- {it['company_id']} {it['company_name']} {it['speech_time']} {it['subject']}")
         if len(new_matched_items) > 10:
             lines.append(f"... 另有 {len(new_matched_items)-10} 筆")
 
@@ -266,13 +266,14 @@ def main():
         # 兩個都試；其中一個沒設就跳過
         try:
             telegram_notify(telegram_token, telegram_chat_id, msg)
+            print(f"[info] telegram_notify: send msg({msg}) to chat_id({telegram_chat_id}) succeed!")
         except Exception as e:
             print(f"[warn] telegram notify failed: {e}")
 
-        try:
-            line_push(line_token, line_to, msg)
-        except Exception as e:
-            print(f"[warn] line push failed: {e}")
+        # try:
+        #     line_push(line_token, line_to, msg)
+        # except Exception as e:
+        #     print(f"[warn] line push failed: {e}")
 
     print(f"matched={len(matched_items)} new_matched={len(new_matched_items)}")
 
