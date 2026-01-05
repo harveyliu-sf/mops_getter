@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>MOPS 關鍵字公告監控</title>
 
   <!-- favicon -->
@@ -10,166 +10,230 @@
 
   <style>
     :root{
-      --bg: #0b1220;
-      --card: rgba(255,255,255,.06);
-      --card2: rgba(255,255,255,.08);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.68);
-      --border: rgba(255,255,255,.14);
-      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --bg:#ffffff;
+      --text:#111;
+      --muted:#666;
+      --border:#e5e5e5;
+      --card:#fafafa;
+      --shadow: 0 6px 18px rgba(0,0,0,.06);
     }
 
-    body {
+    body{
+      margin:0;
       font-family: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif;
-      margin: 0;
-      background: radial-gradient(1200px 600px at 20% 0%, #14214a 0%, rgba(20,33,74,0) 60%),
-                  radial-gradient(900px 500px at 80% 10%, #163e3a 0%, rgba(22,62,58,0) 55%),
-                  var(--bg);
+      background: var(--bg);
       color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 28px 18px 40px; }
+    .wrap{ max-width: 1100px; margin:0 auto; padding: 20px 14px 36px; }
 
-    h1 { font-size: 22px; margin: 0 0 10px; letter-spacing: .2px; }
-    .sub { color: var(--muted); line-height: 1.6; margin-bottom: 18px; }
+    h1{ margin:0 0 6px; font-size: 20px; }
+    .meta{ color: var(--muted); line-height: 1.6; font-size: 13px; margin-bottom: 12px; }
 
-    .bar {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      margin: 14px 0 14px;
+    .bar{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      margin: 10px 0 12px;
     }
 
-    .search {
-      display: flex; gap: 10px; align-items: center;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
+    .search{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex: 1 1 360px;
+      min-width: 240px;
+      border:1px solid var(--border);
+      border-radius: 10px;
       padding: 10px 12px;
-      box-shadow: var(--shadow);
-      flex: 1 1 420px;
-      min-width: 280px;
+      background: #fff;
     }
 
-    .search input {
-      flex: 1;
-      background: transparent;
-      border: none;
-      outline: none;
-      color: var(--text);
+    .search input{
+      border:none;
+      outline:none;
+      width:100%;
       font-size: 14px;
+      background: transparent;
+      color: var(--text);
     }
 
-    .pill {
-      font-size: 12px;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      background: var(--card);
+    .pill{
+      border:1px solid var(--border);
       padding: 8px 10px;
       border-radius: 999px;
-      box-shadow: var(--shadow);
+      font-size: 12px;
+      color: var(--muted);
+      background: #fff;
       white-space: nowrap;
     }
 
-    table {
-      width: 100%;
+    /* Desktop table */
+    table{
+      width:100%;
       border-collapse: collapse;
-      background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
+      border-radius: 12px;
+      overflow:hidden;
+      background: #fff;
       box-shadow: var(--shadow);
     }
 
-    th, td {
+    th, td{
       border-bottom: 1px solid var(--border);
-      padding: 12px 10px;
+      padding: 10px 10px;
       vertical-align: top;
       font-size: 13px;
     }
 
-    th {
-      text-align: left;
-      color: rgba(255,255,255,.85);
-      background: rgba(255,255,255,.04);
+    th{
+      background: #f7f7f7;
+      text-align:left;
       position: sticky;
-      top: 0;
-      backdrop-filter: blur(10px);
+      top:0;
       z-index: 1;
     }
 
-    tr:hover td { background: rgba(255,255,255,.03); }
+    tr:hover td{ background: #fcfcfc; }
 
-    .company {
-      display: grid;
-      gap: 4px;
-    }
-    .company .id { font-weight: 650; }
-    .company .name { color: var(--muted); font-size: 12px; }
+    .company .id{ font-weight: 700; }
+    .company .name{ color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .company .fetched{ color: #888; font-size: 11px; margin-top: 6px; }
 
-    .kw {
-      display: inline-flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-    .tag {
+    .tags{ display:flex; gap:6px; flex-wrap:wrap; }
+    .tag{
       font-size: 12px;
-      padding: 4px 8px;
-      border-radius: 999px;
       border: 1px solid var(--border);
-      background: rgba(255,255,255,.05);
-      color: rgba(255,255,255,.85);
+      background: #fff;
+      padding: 3px 8px;
+      border-radius: 999px;
+      color: #333;
     }
 
-    details {
-      background: rgba(255,255,255,.04);
+    .btn{
+      border: 1px solid var(--border);
+      background: #fff;
+      color: #111;
+      border-radius: 10px;
+      padding: 6px 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .btn:hover{ background: #f7f7f7; }
+
+    /* Detail expanded row (full-width under the row) */
+    .detail-row td{
+      padding: 0;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .detail-box{
+      margin: 10px;
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 8px 10px;
+      background: var(--card);
+      padding: 12px;
     }
-    details summary {
-      cursor: pointer;
-      color: rgba(255,255,255,.9);
-      user-select: none;
-      font-weight: 600;
-      outline: none;
-    }
-    details[open] summary { margin-bottom: 10px; }
 
-    .detail-table {
-      width: 100%;
+    .detail-table{
+      width:100%;
       border-collapse: collapse;
-      border-radius: 10px;
-      overflow: hidden;
-      background: rgba(255,255,255,.03);
+      background: #fff;
       border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow:hidden;
     }
-
-    .detail-table th, .detail-table td {
+    .detail-table th, .detail-table td{
       border-bottom: 1px solid var(--border);
       padding: 10px;
       font-size: 13px;
+      vertical-align: top;
+    }
+    .detail-table th{
+      width: 210px;
+      background: #f7f7f7;
+      white-space: nowrap;
     }
 
-    .detail-table th {
-      width: 220px;
-      background: rgba(255,255,255,.04);
-      color: rgba(255,255,255,.85);
+    .mono{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
 
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
-    .muted { color: var(--muted); }
-
-    .empty {
+    .empty{
       margin-top: 12px;
       padding: 14px 12px;
       border: 1px dashed var(--border);
-      border-radius: 14px;
+      border-radius: 12px;
       color: var(--muted);
-      background: rgba(255,255,255,.03);
+      background: #fff;
+    }
+
+    /* Mobile: switch to cards */
+    .cards{ display:none; }
+    .card{
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+    .card .top{
+      display:flex; justify-content:space-between; gap:10px;
+      align-items:flex-start;
+    }
+    .card .time{
+      color: var(--muted);
+      font-size: 12px;
+      text-align:right;
+      white-space: nowrap;
+    }
+    .card .subject{
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    .card .meta2{
+      margin-top: 8px;
+      color: #888;
+      font-size: 11px;
+    }
+    .card details{
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
+      padding: 10px;
+    }
+    .card summary{
+      cursor:pointer;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .card details[open] summary{ margin-bottom: 10px; }
+
+    /* Make detail content readable on small screens */
+    .desc{
+      white-space: pre-wrap;         /* keep newlines */
+      word-break: break-word;
+      line-height: 1.5;
+      font-size: 13px;
+      margin: 0;
+    }
+
+    @media (max-width: 820px){
+      table{ display:none; }
+      .cards{ display:block; }
+    }
+
+    @media (max-width: 380px){
+      h1{ font-size: 18px; }
+      .search{ padding: 9px 10px; }
     }
   </style>
 </head>
@@ -177,29 +241,33 @@
 <body>
   <div class="wrap">
     <h1>MOPS 關鍵字公告監控</h1>
-    <div class="sub" id="meta">讀取中...</div>
+    <div class="meta" id="meta">讀取中...</div>
 
     <div class="bar">
       <div class="search">
-        <span class="muted">🔎</span>
-        <input id="q" placeholder="搜尋：公司 / 主旨 / 關鍵字（例如：鴻海、公司債、自結合併營收）" />
+        <span style="color:#888;">🔎</span>
+        <input id="q" placeholder="搜尋：公司 / 主旨 / 關鍵字（例：鴻海、公司債）" />
       </div>
       <div class="pill" id="stat">—</div>
     </div>
 
+    <!-- Desktop -->
     <table>
       <thead>
         <tr>
-          <th style="width: 90px;">發言日</th>
-          <th style="width: 80px;">時間</th>
-          <th style="width: 140px;">公司</th>
+          <th style="width:90px;">發言日</th>
+          <th style="width:80px;">時間</th>
+          <th style="width:150px;">公司</th>
           <th>主旨</th>
-          <th style="width: 190px;">命中關鍵字</th>
-          <th style="width: 160px;">Detail</th>
+          <th style="width:200px;">命中關鍵字</th>
+          <th style="width:90px;">Detail</th>
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
     </table>
+
+    <!-- Mobile -->
+    <div class="cards" id="cards"></div>
 
     <div id="empty" class="empty" style="display:none;">沒有符合的資料。</div>
   </div>
@@ -214,15 +282,8 @@ function escapeHtml(s) {
     .replaceAll("'", "&#039;");
 }
 
-function nl2br(s) {
-  // 先 escape 再換行，避免 XSS
-  const safe = escapeHtml(s);
-  return safe.replaceAll("\n", "<br/>");
-}
-
 function safeGetDetailRow(detail) {
-  // 依你提供的 detail 結構：detail.result.data[0] 是一個陣列
-  // [0]序號 [1]發言日期 [2]發言時間 [3]發言人 [4]職稱 [5]電話 [6]主旨 [7]符合條款 [8]事實發生日 [9]說明
+  // detail.result.data[0] expected
   try {
     const row = detail?.result?.data?.[0];
     if (Array.isArray(row) && row.length >= 10) return row;
@@ -230,14 +291,53 @@ function safeGetDetailRow(detail) {
   return null;
 }
 
+function speakerTextFromRow(row){
+  const name = row?.[3] ?? "";
+  const title = row?.[4] ?? "";
+  const phone = row?.[5] ?? "";
+  const s = `${name} ${title}（${phone}）`.replace(/\s+/g, " ").trim();
+  return s || "—";
+}
+
+function descFromRow(row){
+  const desc = row?.[9] ?? "";
+  return String(desc);
+}
+
 function getFetchedTs(it) {
-  // fetched_at_tw: "YYYY-MM-DD HH:MM:SS"
-  // Date.parse 對這種格式在不同瀏覽器可能不穩，所以手動轉成 ISO
   const s = it?.fetched_at_tw;
   if (!s) return 0;
   const iso = s.replace(" ", "T") + "+08:00";
   const t = Date.parse(iso);
   return Number.isFinite(t) ? t : 0;
+}
+
+function makeTagsHtml(kws){
+  const arr = Array.isArray(kws) ? kws : [];
+  if (arr.length === 0) return '<span style="color:#888;">—</span>';
+  return `<div class="tags">${arr.map(k => `<span class="tag">${escapeHtml(k)}</span>`).join("")}</div>`;
+}
+
+function buildDetailTableHtml(detail){
+  const row = safeGetDetailRow(detail);
+  if (!row) {
+    return `<div style="color:#666;">無法解析 detail 結構（請檢查 data.json 的 detail.result.data）</div>`;
+  }
+  const speaker = speakerTextFromRow(row);
+  const desc = descFromRow(row);
+
+  return `
+    <table class="detail-table">
+      <tr>
+        <th>發言人（電話）</th>
+        <th>說明</th>
+      </tr>
+      <tr>
+        <td>${escapeHtml(speaker)}</td>
+        <td><pre class="desc">${escapeHtml(desc)}</pre></td>
+      </tr>
+    </table>
+  `;
 }
 
 async function main() {
@@ -247,114 +347,136 @@ async function main() {
   const meta = data.meta || {};
   let items = Array.isArray(data.items) ? data.items.slice() : [];
 
-  // (2) 排序：越晚抓到越前面
+  // (2) sort: latest fetched first
   items.sort((a, b) => {
     const tb = getFetchedTs(b);
     const ta = getFetchedTs(a);
     if (tb !== ta) return tb - ta;
-    // fallback：key 反向（較新的通常 key 也不會小，但保險）
     return String(b?.key ?? "").localeCompare(String(a?.key ?? ""));
   });
 
-  const metaEl = document.getElementById("meta");
-  metaEl.innerHTML =
+  document.getElementById("meta").innerHTML =
     `執行時間（台灣）：<span class="mono">${escapeHtml(meta.run_at_tw || "-")}</span>
     　｜　查詢：<span class="mono">${escapeHtml(JSON.stringify(meta.query || {}))}</span>
     　｜　關鍵字：<span class="mono">${escapeHtml((meta.keywords || []).join(", "))}</span>`;
 
   const q = document.getElementById("q");
   const tbody = document.getElementById("tbody");
+  const cards = document.getElementById("cards");
   const empty = document.getElementById("empty");
   const stat = document.getElementById("stat");
 
-  function render() {
-    const term = (q.value || "").trim().toLowerCase();
-    tbody.innerHTML = "";
-
-    const filtered = !term ? items : items.filter(it => {
+  function filterItems(term){
+    if (!term) return items;
+    const t = term.toLowerCase();
+    return items.filter(it => {
       const s = [
         it.company_id, it.company_name, it.subject,
         (it.matched_keywords||[]).join(" "),
         it.speech_date, it.speech_time,
         it.fetched_at_tw
       ].join(" ").toLowerCase();
-      return s.includes(term);
+      return s.includes(t);
     });
+  }
 
-    stat.textContent = `顯示 ${filtered.length} / ${items.length}`;
-
-    if (filtered.length === 0) {
-      empty.style.display = "block";
-    } else {
-      empty.style.display = "none";
-    }
+  function renderDesktop(filtered){
+    tbody.innerHTML = "";
 
     for (const it of filtered) {
       const tr = document.createElement("tr");
 
-      const tdDate = document.createElement("td");
-      tdDate.textContent = it.speech_date || "";
-      tr.appendChild(tdDate);
+      // main row cells
+      tr.innerHTML = `
+        <td>${escapeHtml(it.speech_date || "")}</td>
+        <td>${escapeHtml(it.speech_time || "")}</td>
+        <td>
+          <div class="company">
+            <div class="id">${escapeHtml(it.company_id || "")}</div>
+            <div class="name">${escapeHtml(it.company_name || "")}</div>
+            <div class="fetched mono">${escapeHtml(it.fetched_at_tw || "")}</div>
+          </div>
+        </td>
+        <td>${escapeHtml(it.subject || "")}</td>
+        <td>${makeTagsHtml(it.matched_keywords)}</td>
+        <td><button class="btn" data-key="${escapeHtml(it.key || "")}">展開</button></td>
+      `;
 
-      const tdTime = document.createElement("td");
-      tdTime.textContent = it.speech_time || "";
-      tr.appendChild(tdTime);
+      // detail row (full width)
+      const tr2 = document.createElement("tr");
+      tr2.className = "detail-row";
+      tr2.style.display = "none";
+      tr2.setAttribute("data-detail-for", it.key || "");
 
-      const tdCo = document.createElement("td");
-      tdCo.innerHTML = `
-        <div class="company">
-          <div class="id">${escapeHtml(it.company_id || "")}</div>
-          <div class="name">${escapeHtml(it.company_name || "")}</div>
-          <div class="muted mono" style="font-size:11px;">${escapeHtml(it.fetched_at_tw || "")}</div>
-        </div>`;
-      tr.appendChild(tdCo);
-
-      const tdSub = document.createElement("td");
-      tdSub.textContent = it.subject || "";
-      tr.appendChild(tdSub);
-
-      const tdKw = document.createElement("td");
-      const kws = (it.matched_keywords || []).map(k => `<span class="tag">${escapeHtml(k)}</span>`).join("");
-      tdKw.innerHTML = `<div class="kw">${kws || '<span class="muted">—</span>'}</div>`;
-      tr.appendChild(tdKw);
-
-      // (1) Detail：改成兩列表格顯示（發言人(電話) / 說明）
-      const tdDetail = document.createElement("td");
-      const d = document.createElement("details");
-      const s = document.createElement("summary");
-      s.textContent = "展開";
-      d.appendChild(s);
-
-      const row = safeGetDetailRow(it.detail);
-      if (row) {
-        const speakerName = row[3] ?? "";
-        const speakerTitle = row[4] ?? "";
-        const speakerPhone = row[5] ?? "";
-        const desc = row[9] ?? "";
-
-        const speakerText = `${speakerName} ${speakerTitle}（${speakerPhone}）`.trim();
-
-        d.innerHTML += `
-          <table class="detail-table">
-            <tr>
-              <th>發言人（電話）</th>
-              <th>說明</th>
-            </tr>
-            <tr>
-              <td>${escapeHtml(speakerText)}</td>
-              <td>${nl2br(desc)}</td>
-            </tr>
-          </table>
-        `;
-      } else {
-        d.innerHTML += `<div class="muted">無法解析 detail 結構（可先檢查 data.json 的 detail.result.data）</div>`;
-      }
-
-      tdDetail.appendChild(d);
-      tr.appendChild(tdDetail);
+      tr2.innerHTML = `
+        <td colspan="6">
+          <div class="detail-box">
+            ${buildDetailTableHtml(it.detail)}
+          </div>
+        </td>
+      `;
 
       tbody.appendChild(tr);
+      tbody.appendChild(tr2);
     }
+
+    // bind buttons
+    tbody.querySelectorAll("button[data-key]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const key = btn.getAttribute("data-key");
+        const row = tbody.querySelector(`tr.detail-row[data-detail-for="${CSS.escape(key)}"]`);
+        if (!row) return;
+
+        const open = row.style.display !== "none";
+        row.style.display = open ? "none" : "table-row";
+        btn.textContent = open ? "展開" : "收起";
+      });
+    });
+  }
+
+  function renderMobile(filtered){
+    cards.innerHTML = "";
+
+    for (const it of filtered) {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      const detailHtml = buildDetailTableHtml(it.detail);
+
+      card.innerHTML = `
+        <div class="top">
+          <div>
+            <div style="font-weight:800;">${escapeHtml(it.company_id || "")} ${escapeHtml(it.company_name || "")}</div>
+            <div style="color:#666;font-size:12px;margin-top:2px;">${escapeHtml(it.speech_date || "")}</div>
+          </div>
+          <div class="time">${escapeHtml(it.speech_time || "")}</div>
+        </div>
+
+        <div class="subject">${escapeHtml(it.subject || "")}</div>
+
+        <div style="margin-top:8px;">${makeTagsHtml(it.matched_keywords)}</div>
+
+        <div class="meta2 mono">抓取時間：${escapeHtml(it.fetched_at_tw || "")}</div>
+
+        <details>
+          <summary>Detail</summary>
+          ${detailHtml}
+        </details>
+      `;
+      cards.appendChild(card);
+    }
+  }
+
+  function render(){
+    const term = (q.value || "").trim();
+    const filtered = filterItems(term);
+
+    stat.textContent = `顯示 ${filtered.length} / ${items.length}`;
+
+    empty.style.display = filtered.length === 0 ? "block" : "none";
+
+    renderDesktop(filtered);
+    renderMobile(filtered);
   }
 
   q.addEventListener("input", render);
