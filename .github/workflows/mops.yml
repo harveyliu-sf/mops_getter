@@ -41,7 +41,7 @@ jobs:
       - name: Fetch & build public data
         env:
           TELEGRAM_BOT_TOKEN: 8032995838:AAG3g4oS11W_a1JusStBlp8Csr_6nfUBhO8
-          TELEGRAM_CHAT_ID: 8360205578
+          TELEGRAM_CHAT_ID: -5225938894
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_TO: ${{ secrets.LINE_TO }}
         run: |
