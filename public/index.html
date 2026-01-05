@@ -4,54 +4,268 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MOPS 關鍵字公告監控</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+
   <style>
-    body { font-family: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 24px; }
-    .meta { margin-bottom: 12px; line-height: 1.6; }
-    input { padding: 8px; width: 320px; max-width: 100%; }
-    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
-    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
-    th { position: sticky; top: 0; background: #fafafa; }
-    .kw { color: #444; font-size: 12px; }
-    details pre { white-space: pre-wrap; word-break: break-word; background: #f7f7f7; padding: 8px; border-radius: 6px; }
+    :root{
+      --bg: #0b1220;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.08);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.68);
+      --border: rgba(255,255,255,.14);
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      background: radial-gradient(1200px 600px at 20% 0%, #14214a 0%, rgba(20,33,74,0) 60%),
+                  radial-gradient(900px 500px at 80% 10%, #163e3a 0%, rgba(22,62,58,0) 55%),
+                  var(--bg);
+      color: var(--text);
+    }
+
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 28px 18px 40px; }
+
+    h1 { font-size: 22px; margin: 0 0 10px; letter-spacing: .2px; }
+    .sub { color: var(--muted); line-height: 1.6; margin-bottom: 18px; }
+
+    .bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin: 14px 0 14px;
+    }
+
+    .search {
+      display: flex; gap: 10px; align-items: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 10px 12px;
+      box-shadow: var(--shadow);
+      flex: 1 1 420px;
+      min-width: 280px;
+    }
+
+    .search input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .pill {
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 8px 10px;
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+      white-space: nowrap;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--border);
+      padding: 12px 10px;
+      vertical-align: top;
+      font-size: 13px;
+    }
+
+    th {
+      text-align: left;
+      color: rgba(255,255,255,.85);
+      background: rgba(255,255,255,.04);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      z-index: 1;
+    }
+
+    tr:hover td { background: rgba(255,255,255,.03); }
+
+    .company {
+      display: grid;
+      gap: 4px;
+    }
+    .company .id { font-weight: 650; }
+    .company .name { color: var(--muted); font-size: 12px; }
+
+    .kw {
+      display: inline-flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.85);
+    }
+
+    details {
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 10px;
+    }
+    details summary {
+      cursor: pointer;
+      color: rgba(255,255,255,.9);
+      user-select: none;
+      font-weight: 600;
+      outline: none;
+    }
+    details[open] summary { margin-bottom: 10px; }
+
+    .detail-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--border);
+    }
+
+    .detail-table th, .detail-table td {
+      border-bottom: 1px solid var(--border);
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    .detail-table th {
+      width: 220px;
+      background: rgba(255,255,255,.04);
+      color: rgba(255,255,255,.85);
+    }
+
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+    .muted { color: var(--muted); }
+
+    .empty {
+      margin-top: 12px;
+      padding: 14px 12px;
+      border: 1px dashed var(--border);
+      border-radius: 14px;
+      color: var(--muted);
+      background: rgba(255,255,255,.03);
+    }
   </style>
 </head>
+
 <body>
-  <h1>MOPS 關鍵字公告監控</h1>
+  <div class="wrap">
+    <h1>MOPS 關鍵字公告監控</h1>
+    <div class="sub" id="meta">讀取中...</div>
 
-  <div class="meta" id="meta">讀取中...</div>
+    <div class="bar">
+      <div class="search">
+        <span class="muted">🔎</span>
+        <input id="q" placeholder="搜尋：公司 / 主旨 / 關鍵字（例如：鴻海、公司債、自結合併營收）" />
+      </div>
+      <div class="pill" id="stat">—</div>
+    </div>
 
-  <label>
-    搜尋（公司/主旨/關鍵字）：
-    <input id="q" placeholder="例如：鴻海 / 公司債 / 自結合併營收" />
-  </label>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 90px;">發言日</th>
+          <th style="width: 80px;">時間</th>
+          <th style="width: 140px;">公司</th>
+          <th>主旨</th>
+          <th style="width: 190px;">命中關鍵字</th>
+          <th style="width: 160px;">Detail</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
 
-  <table>
-    <thead>
-      <tr>
-        <th>發言日</th>
-        <th>時間</th>
-        <th>公司</th>
-        <th>主旨</th>
-        <th>命中關鍵字</th>
-        <th>Detail</th>
-      </tr>
-    </thead>
-    <tbody id="tbody"></tbody>
-  </table>
+    <div id="empty" class="empty" style="display:none;">沒有符合的資料。</div>
+  </div>
 
 <script>
+function escapeHtml(s) {
+  return String(s ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function nl2br(s) {
+  // 先 escape 再換行，避免 XSS
+  const safe = escapeHtml(s);
+  return safe.replaceAll("\n", "<br/>");
+}
+
+function safeGetDetailRow(detail) {
+  // 依你提供的 detail 結構：detail.result.data[0] 是一個陣列
+  // [0]序號 [1]發言日期 [2]發言時間 [3]發言人 [4]職稱 [5]電話 [6]主旨 [7]符合條款 [8]事實發生日 [9]說明
+  try {
+    const row = detail?.result?.data?.[0];
+    if (Array.isArray(row) && row.length >= 10) return row;
+  } catch (_) {}
+  return null;
+}
+
+function getFetchedTs(it) {
+  // fetched_at_tw: "YYYY-MM-DD HH:MM:SS"
+  // Date.parse 對這種格式在不同瀏覽器可能不穩，所以手動轉成 ISO
+  const s = it?.fetched_at_tw;
+  if (!s) return 0;
+  const iso = s.replace(" ", "T") + "+08:00";
+  const t = Date.parse(iso);
+  return Number.isFinite(t) ? t : 0;
+}
+
 async function main() {
   const res = await fetch("./data.json", { cache: "no-store" });
   const data = await res.json();
 
   const meta = data.meta || {};
-  const items = data.items || [];
+  let items = Array.isArray(data.items) ? data.items.slice() : [];
 
-  document.getElementById("meta").innerText =
-    `執行時間（台灣）：${meta.run_at_tw || "-"} ｜ 查詢：${JSON.stringify(meta.query || {})} ｜ 關鍵字：${(meta.keywords||[]).join(", ")} ｜ 命中：${meta.matched_count||0} ｜ 新命中：${meta.new_matched_count||0}`;
+  // (2) 排序：越晚抓到越前面
+  items.sort((a, b) => {
+    const tb = getFetchedTs(b);
+    const ta = getFetchedTs(a);
+    if (tb !== ta) return tb - ta;
+    // fallback：key 反向（較新的通常 key 也不會小，但保險）
+    return String(b?.key ?? "").localeCompare(String(a?.key ?? ""));
+  });
 
-  const tbody = document.getElementById("tbody");
+  const metaEl = document.getElementById("meta");
+  metaEl.innerHTML =
+    `執行時間（台灣）：<span class="mono">${escapeHtml(meta.run_at_tw || "-")}</span>
+    　｜　查詢：<span class="mono">${escapeHtml(JSON.stringify(meta.query || {}))}</span>
+    　｜　關鍵字：<span class="mono">${escapeHtml((meta.keywords || []).join(", "))}</span>`;
+
   const q = document.getElementById("q");
+  const tbody = document.getElementById("tbody");
+  const empty = document.getElementById("empty");
+  const stat = document.getElementById("stat");
 
   function render() {
     const term = (q.value || "").trim().toLowerCase();
@@ -61,10 +275,19 @@ async function main() {
       const s = [
         it.company_id, it.company_name, it.subject,
         (it.matched_keywords||[]).join(" "),
-        JSON.stringify(it.detail_params||{})
+        it.speech_date, it.speech_time,
+        it.fetched_at_tw
       ].join(" ").toLowerCase();
       return s.includes(term);
     });
+
+    stat.textContent = `顯示 ${filtered.length} / ${items.length}`;
+
+    if (filtered.length === 0) {
+      empty.style.display = "block";
+    } else {
+      empty.style.display = "none";
+    }
 
     for (const it of filtered) {
       const tr = document.createElement("tr");
@@ -78,7 +301,12 @@ async function main() {
       tr.appendChild(tdTime);
 
       const tdCo = document.createElement("td");
-      tdCo.innerHTML = `<div>${it.company_id || ""}</div><div>${it.company_name || ""}</div>`;
+      tdCo.innerHTML = `
+        <div class="company">
+          <div class="id">${escapeHtml(it.company_id || "")}</div>
+          <div class="name">${escapeHtml(it.company_name || "")}</div>
+          <div class="muted mono" style="font-size:11px;">${escapeHtml(it.fetched_at_tw || "")}</div>
+        </div>`;
       tr.appendChild(tdCo);
 
       const tdSub = document.createElement("td");
@@ -86,17 +314,42 @@ async function main() {
       tr.appendChild(tdSub);
 
       const tdKw = document.createElement("td");
-      tdKw.innerHTML = `<div class="kw">${(it.matched_keywords||[]).join(", ")}</div>`;
+      const kws = (it.matched_keywords || []).map(k => `<span class="tag">${escapeHtml(k)}</span>`).join("");
+      tdKw.innerHTML = `<div class="kw">${kws || '<span class="muted">—</span>'}</div>`;
       tr.appendChild(tdKw);
 
+      // (1) Detail：改成兩列表格顯示（發言人(電話) / 說明）
       const tdDetail = document.createElement("td");
       const d = document.createElement("details");
       const s = document.createElement("summary");
       s.textContent = "展開";
-      const pre = document.createElement("pre");
-      pre.textContent = JSON.stringify(it.detail, null, 2);
       d.appendChild(s);
-      d.appendChild(pre);
+
+      const row = safeGetDetailRow(it.detail);
+      if (row) {
+        const speakerName = row[3] ?? "";
+        const speakerTitle = row[4] ?? "";
+        const speakerPhone = row[5] ?? "";
+        const desc = row[9] ?? "";
+
+        const speakerText = `${speakerName} ${speakerTitle}（${speakerPhone}）`.trim();
+
+        d.innerHTML += `
+          <table class="detail-table">
+            <tr>
+              <th>發言人（電話）</th>
+              <th>說明</th>
+            </tr>
+            <tr>
+              <td>${escapeHtml(speakerText)}</td>
+              <td>${nl2br(desc)}</td>
+            </tr>
+          </table>
+        `;
+      } else {
+        d.innerHTML += `<div class="muted">無法解析 detail 結構（可先檢查 data.json 的 detail.result.data）</div>`;
+      }
+
       tdDetail.appendChild(d);
       tr.appendChild(tdDetail);
 
@@ -112,5 +365,6 @@ main().catch(err => {
   document.getElementById("meta").innerText = "讀取失敗：" + err;
 });
 </script>
+
 </body>
 </html>
