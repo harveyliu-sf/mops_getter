@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-05 07:40:22",
+    "run_at_tw": "2026-01-05 08:55:26",
     "query": {
       "year": "115",
       "month": "1",
@@ -10,11 +10,12 @@
       "自結合併營收",
       "取得廠務設備",
       "取得機器設備",
+      "總經理異動",
       "上市管理",
       "公司債"
     ],
-    "matched_count": 1,
-    "new_matched_count": 0
+    "matched_count": 2,
+    "new_matched_count": 1
   },
   "items": [
     {
@@ -107,9 +108,103 @@
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/01/05 07:40:24"
+        "datetime": "115/01/05 08:55:28"
       },
-      "fetched_at_tw": "2026-01-05 07:40:22"
+      "fetched_at_tw": "2026-01-05 08:55:26"
+    },
+    {
+      "key": "1141231|otc|6612|4",
+      "speech_date": "115/01/05",
+      "speech_time": "08:04:17",
+      "company_id": "6612",
+      "company_name": "奈米醫材",
+      "subject": "代子公司MILLENNIUMBIOMEDICALINC.公告-總經理異動公告",
+      "matched_keywords": [
+        "總經理異動"
+      ],
+      "detail_params": {
+        "serialNumber": 4,
+        "enterDate": "1141231",
+        "marketKind": "otc",
+        "companyId": "6612"
+      },
+      "detail": {
+        "code": 200,
+        "message": "查詢成功",
+        "result": {
+          "marketName": "上櫃公司",
+          "companyId": "6612",
+          "data": [
+            [
+              4,
+              "115/01/05",
+              "08:04:17",
+              "陳丹荔",
+              "財會部副總",
+              "03-6579530",
+              "代子公司 MILLENNIUM BIOMEDICAL INC.公告\r\n- 總經理異動公告",
+              "6",
+              "115/01/05",
+              "1.董事會決議日期或發生變動日期:115/01/05\n2.人員別（請輸入董事長或總經理）:總經理\n3.舊任者姓名:Ih-Houng Loh\n4.舊任者簡歷:奈米醫材 董事長\n            MILLENNIUM BIOMEDICAL INC. 董事長\n            美國麻省理工學院-材料工程/高分子科學博士\n\n5.新任者姓名:Bradley Scot Stone\n6.新任者簡歷:博士倫（Bausch + Lomb）供應鏈管理 高級總監\n            Montana State University, Bozeman, MT，-理學學士（化學工程）\n\n7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「職務調整」、「資遣」、\n「退休」、「逝世」或「新任」）:新任\n8.異動原因:新任，Ih-Houng Loh 仍為公司董事長。\n9.新任生效日期:115/01/05\n10.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，\n本則重大訊息同時符合證券交易法施行細則第7條第6款所定\n對股東權益或證券價格有重大影響之事項):無"
+            ]
+          ],
+          "footer": [
+            "以上資料均由各公司依發言當時所屬市場別之規定申報後，由本系統對外公佈，資料如有虛偽不實，均由該公司負責。"
+          ],
+          "header": {
+            "note": [],
+            "subTitle": [],
+            "mainTitle": [
+              "公司當日重大訊息之詳細內容"
+            ]
+          },
+          "titles": [
+            {
+              "sub": [],
+              "main": "序號"
+            },
+            {
+              "sub": [],
+              "main": "發言日期"
+            },
+            {
+              "sub": [],
+              "main": "發言時間"
+            },
+            {
+              "sub": [],
+              "main": "發言人"
+            },
+            {
+              "sub": [],
+              "main": "發言人職稱"
+            },
+            {
+              "sub": [],
+              "main": "發言人電話"
+            },
+            {
+              "sub": [],
+              "main": "主旨"
+            },
+            {
+              "sub": [],
+              "main": "符合條款"
+            },
+            {
+              "sub": [],
+              "main": "事實發生日"
+            },
+            {
+              "sub": [],
+              "main": "說明"
+            }
+          ],
+          "companyAbbreviation": "奈米醫材"
+        },
+        "datetime": "115/01/05 08:55:28"
+      },
+      "fetched_at_tw": "2026-01-05 08:55:26"
     }
   ]
 }
