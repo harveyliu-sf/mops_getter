@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-05 15:19:30",
+    "run_at_tw": "2026-01-05 15:27:24",
     "query": {
       "year": "115",
       "month": "1",
@@ -15,7 +15,7 @@
       "公司債"
     ],
     "matched_count": 4,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -108,9 +108,9 @@
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/01/05 15:19:33"
+        "datetime": "115/01/05 15:27:28"
       },
-      "fetched_at_tw": "2026-01-05 15:19:30"
+      "fetched_at_tw": "2026-01-05 15:27:24"
     },
     {
       "key": "1150105|sii|3321|1",
@@ -202,9 +202,9 @@
           ],
           "companyAbbreviation": "同泰"
         },
-        "datetime": "115/01/05 15:19:33"
+        "datetime": "115/01/05 15:27:29"
       },
-      "fetched_at_tw": "2026-01-05 15:19:30"
+      "fetched_at_tw": "2026-01-05 15:27:24"
     },
     {
       "key": "1141231|otc|6612|4",
@@ -296,9 +296,9 @@
           ],
           "companyAbbreviation": "奈米醫材"
         },
-        "datetime": "115/01/05 15:19:34"
+        "datetime": "115/01/05 15:27:30"
       },
-      "fetched_at_tw": "2026-01-05 15:19:30"
+      "fetched_at_tw": "2026-01-05 15:27:24"
     },
     {
       "key": "1141231|otc|3680|2",
@@ -390,9 +390,9 @@
           ],
           "companyAbbreviation": "家登"
         },
-        "datetime": "115/01/05 15:19:34"
+        "datetime": "115/01/05 15:27:31"
       },
-      "fetched_at_tw": "2026-01-05 15:19:30"
+      "fetched_at_tw": "2026-01-05 15:27:24"
     }
   ]
 }
