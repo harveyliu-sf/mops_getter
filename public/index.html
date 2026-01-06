@@ -491,19 +491,19 @@ async function main() {
       tbody.appendChild(tr2);
     }
 
-  tbody.querySelectorAll("button[data-key]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const mainRow = btn.closest("tr");
-      if (!mainRow) return;
-  
-      const detailRow = mainRow.nextElementSibling;
-      if (!detailRow || !detailRow.classList.contains("detail-row")) return;
-  
-      const open = detailRow.style.display !== "none";
-      detailRow.style.display = open ? "none" : "table-row";
-      btn.textContent = open ? "展開" : "收起";
+    tbody.querySelectorAll("button[data-key]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const mainRow = btn.closest("tr");
+        if (!mainRow) return;
+    
+        const detailRow = mainRow.nextElementSibling;
+        if (!detailRow || !detailRow.classList.contains("detail-row")) return;
+    
+        const open = detailRow.style.display !== "none";
+        detailRow.style.display = open ? "none" : "table-row";
+        btn.textContent = open ? "展開" : "收起";
+      });
     });
-  });
 
   function renderMobile(filtered){
     cards.innerHTML = "";
@@ -547,6 +547,7 @@ async function main() {
 
   q.addEventListener("input", render);
   render();
+  }
 }
 
 main().catch(err => {
