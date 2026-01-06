@@ -313,7 +313,7 @@
 
     <div id="empty" class="empty" style="display:none;">沒有符合的資料。</div>
   </div>
-<script src="https://unpkg.com/@motionone/dom/dist/motion-one.min.js"></script>
+
 <script>
 function escapeHtml(s) {
   return String(s ?? "")
@@ -521,7 +521,6 @@ async function main() {
 
       const tr2 = document.createElement("tr");
       tr2.className = "detail-row";
-      tr2.style.display = "none";
       tr2.setAttribute("data-detail-for", it.key || "");
       tr2.innerHTML = `
         <td colspan="6">
@@ -573,9 +572,9 @@ async function main() {
 
         <details>
           <summary>Detail</summary>
-            <div class="m-detail">
-              ${buildDetailTableHtml(it.detail_json)}
-            </div>
+          <div class="m-detail">
+            ${buildDetailTableHtml(it.detail_json)}
+          </div>
         </details>
       `;
       cards.appendChild(card);
