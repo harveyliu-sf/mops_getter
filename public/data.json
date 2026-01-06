@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-06 12:25:04",
+    "run_at_tw": "2026-01-06 12:56:56",
     "query": {
       "year": "115",
       "month": "1",
@@ -29,10 +29,10 @@
         "自結合併營收"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150105",
-        "marketKind": "sii",
-        "companyId": "6278"
+        "serialNumber": 1,
+        "companyId": "6278",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -108,9 +108,9 @@
           ],
           "companyAbbreviation": "台表科"
         },
-        "datetime": "115/01/06 12:25:05"
+        "datetime": "115/01/06 12:56:57"
       },
-      "fetched_at_tw": "2026-01-06 12:25:04"
+      "fetched_at_tw": "2026-01-06 12:56:56"
     },
     {
       "key": "1150105|sii|1590|1",
@@ -123,10 +123,10 @@
         "自結合併營收"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150105",
-        "marketKind": "sii",
-        "companyId": "1590"
+        "serialNumber": 1,
+        "companyId": "1590",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -202,9 +202,9 @@
           ],
           "companyAbbreviation": "亞德客-KY"
         },
-        "datetime": "115/01/06 12:25:05"
+        "datetime": "115/01/06 12:56:58"
       },
-      "fetched_at_tw": "2026-01-06 12:25:04"
+      "fetched_at_tw": "2026-01-06 12:56:56"
     },
     {
       "key": "1150105|otc|5457|3",
@@ -217,10 +217,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150105",
-        "marketKind": "otc",
-        "companyId": "5457"
+        "serialNumber": 3,
+        "companyId": "5457",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -296,9 +296,9 @@
           ],
           "companyAbbreviation": "宣德"
         },
-        "datetime": "115/01/06 12:25:06"
+        "datetime": "115/01/06 12:56:59"
       },
-      "fetched_at_tw": "2026-01-06 12:25:04"
+      "fetched_at_tw": "2026-01-06 12:56:56"
     },
     {
       "key": "1150105|otc|5457|5",
@@ -311,10 +311,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 5,
         "enterDate": "1150105",
-        "marketKind": "otc",
-        "companyId": "5457"
+        "serialNumber": 5,
+        "companyId": "5457",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -390,9 +390,9 @@
           ],
           "companyAbbreviation": "宣德"
         },
-        "datetime": "115/01/06 12:25:06"
+        "datetime": "115/01/06 12:56:59"
       },
-      "fetched_at_tw": "2026-01-06 12:25:04"
+      "fetched_at_tw": "2026-01-06 12:56:56"
     }
   ]
 }
