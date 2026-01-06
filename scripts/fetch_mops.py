@@ -172,7 +172,7 @@ def main():
     args = ap.parse_args()
 
     keywords = load_keywords(args.keywords)
-
+    print(keywords)
     now_tw = datetime.now(TAIPEI_TZ)
     y = str(roc_year(now_tw))              # e.g. 115
     m = str(now_tw.month)                  # e.g. "1" (不補零，符合你範例)
