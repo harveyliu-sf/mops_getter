@@ -491,6 +491,7 @@ async function main() {
 
       tbody.appendChild(tr);
       tbody.appendChild(tr2);
+      console.log("===renderDesktop end===");
     }
 
     tbody.querySelectorAll("button[data-key]").forEach(btn => {
@@ -510,6 +511,7 @@ async function main() {
 
   function renderMobile(filtered){
     cards.innerHTML = "";
+    console.log("===renderMobile start===");
     for (const it of filtered) {
       const card = document.createElement("div");
       card.className = "card";
@@ -535,6 +537,7 @@ async function main() {
       `;
       cards.appendChild(card);
     }
+    console.log("===renderMobile end===");
   }
 
   function render(){
