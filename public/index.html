@@ -282,10 +282,60 @@ function escapeHtml(s) {
     .replaceAll("'", "&#039;");
 }
 
-function safeGetDetailRow(detail) {
-  // detail.result.data[0] expected
+// Robust-ish CSV parser (handles quoted fields with commas/newlines)
+function parseCSV(text) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    const next = text[i + 1];
+
+    if (inQuotes) {
+      if (c === '"' && next === '"') {
+        field += '"'; i++;
+      } else if (c === '"') {
+        inQuotes = false;
+      } else {
+        field += c;
+      }
+    } else {
+      if (c === '"') {
+        inQuotes = true;
+      } else if (c === ",") {
+        row.push(field); field = "";
+      } else if (c === "\n") {
+        row.push(field); field = "";
+        // 忽略最後一個空行
+        if (row.length > 1 || row[0] !== "") rows.push(row);
+        row = [];
+      } else if (c === "\r") {
+        // skip
+      } else {
+        field += c;
+      }
+    }
+  }
+  // last field
+  row.push(field);
+  if (row.length > 1 || row[0] !== "") rows.push(row);
+
+  return rows;
+}
+
+function getFetchedTsFromStr(s) {
+  // "YYYY-MM-DD HH:MM:SS" -> parse to ms
+  if (!s) return 0;
+  const iso = String(s).replace(" ", "T") + "+08:00";
+  const t = Date.parse(iso);
+  return Number.isFinite(t) ? t : 0;
+}
+
+function safeGetDetailRowFromDetail(detailObj) {
   try {
-    const row = detail?.result?.data?.[0];
+    const row = detailObj?.result?.data?.[0];
     if (Array.isArray(row) && row.length >= 10) return row;
   } catch (_) {}
   return null;
@@ -295,36 +345,18 @@ function speakerTextFromRow(row){
   const name = row?.[3] ?? "";
   const title = row?.[4] ?? "";
   const phone = row?.[5] ?? "";
-  const s = `${name} ${title}（${phone}）`.replace(/\s+/g, " ").trim();
-  return s || "—";
+  return `${name} ${title}（${phone}）`.replace(/\s+/g, " ").trim() || "—";
 }
 
-function descFromRow(row){
-  const desc = row?.[9] ?? "";
-  return String(desc);
-}
+function buildDetailTableHtml(detailJsonStr){
+  let detailObj = null;
+  try { detailObj = JSON.parse(detailJsonStr || "{}"); } catch (_) {}
 
-function getFetchedTs(it) {
-  const s = it?.fetched_at_tw;
-  if (!s) return 0;
-  const iso = s.replace(" ", "T") + "+08:00";
-  const t = Date.parse(iso);
-  return Number.isFinite(t) ? t : 0;
-}
+  const row = safeGetDetailRowFromDetail(detailObj);
+  if (!row) return `<div style="color:#666;">無法解析 detail（可能是空或非預期格式）</div>`;
 
-function makeTagsHtml(kws){
-  const arr = Array.isArray(kws) ? kws : [];
-  if (arr.length === 0) return '<span style="color:#888;">—</span>';
-  return `<div class="tags">${arr.map(k => `<span class="tag">${escapeHtml(k)}</span>`).join("")}</div>`;
-}
-
-function buildDetailTableHtml(detail){
-  const row = safeGetDetailRow(detail);
-  if (!row) {
-    return `<div style="color:#666;">無法解析 detail 結構（請檢查 data.json 的 detail.result.data）</div>`;
-  }
   const speaker = speakerTextFromRow(row);
-  const desc = descFromRow(row);
+  const desc = String(row?.[9] ?? "");
 
   return `
     <table class="detail-table">
@@ -344,25 +376,58 @@ function buildDetailTableHtml(detail){
   `;
 }
 
-async function main() {
-  const res = await fetch("./data.json", { cache: "no-store" });
-  const data = await res.json();
+async function fetchAllItemsFromCSVs() {
+  const m = await fetch("./manifest.json", { cache: "no-store" }).then(r => r.json());
+  const files = Array.isArray(m.files) ? m.files : [];
 
-  const meta = data.meta || {};
-  let items = Array.isArray(data.items) ? data.items.slice() : [];
+  const all = [];
+  for (const fn of files) {
+    const csvText = await fetch(`./${fn}`, { cache: "no-store" }).then(r => r.text());
+    const rows = parseCSV(csvText);
+    if (rows.length < 2) continue;
 
-  // (2) sort: latest fetched first
-  items.sort((a, b) => {
-    const tb = getFetchedTs(b);
-    const ta = getFetchedTs(a);
+    const header = rows[0];
+    const idx = Object.fromEntries(header.map((h, i) => [h, i]));
+
+    for (let i = 1; i < rows.length; i++) {
+      const r = rows[i];
+      const it = {
+        key: r[idx.key],
+        speech_date: r[idx.speech_date],
+        speech_time: r[idx.speech_time],
+        company_id: r[idx.company_id],
+        company_name: r[idx.company_name],
+        subject: r[idx.subject],
+        matched_keywords: String(r[idx.matched_keywords] || "").split("|").filter(Boolean),
+        fetched_at_tw: r[idx.fetched_at_tw],
+        detail_json: r[idx.detail_json] || "{}",
+      };
+      all.push(it);
+    }
+  }
+
+  // 最新抓取時間在前
+  all.sort((a, b) => {
+    const tb = getFetchedTsFromStr(b.fetched_at_tw);
+    const ta = getFetchedTsFromStr(a.fetched_at_tw);
     if (tb !== ta) return tb - ta;
-    return String(b?.key ?? "").localeCompare(String(a?.key ?? ""));
+    return String(b.key || "").localeCompare(String(a.key || ""));
   });
+
+  return { files, items: all };
+}
+
+async function main() {
+  // meta 還是用 data.json（今天的），方便顯示 run 時間/關鍵字/查詢
+  const today = await fetch("./data.json", { cache: "no-store" }).then(r => r.json()).catch(() => ({}));
+  const meta = today.meta || {};
+
+  const { files, items } = await fetchAllItemsFromCSVs();
 
   document.getElementById("meta").innerHTML =
     `執行時間（台灣）：<span class="mono">${escapeHtml(meta.run_at_tw || "-")}</span>
-    　｜　查詢：<span class="mono">${escapeHtml(JSON.stringify(meta.query || {}))}</span>
-    　｜　關鍵字：<span class="mono">${escapeHtml((meta.keywords || []).join(", "))}</span>`;
+    　｜　關鍵字：<span class="mono">${escapeHtml((meta.keywords || []).join(", "))}</span>
+    　｜　已載入 CSV：<span class="mono">${escapeHtml(String(files.length))}</span>`;
 
   const q = document.getElementById("q");
   const tbody = document.getElementById("tbody");
@@ -384,13 +449,17 @@ async function main() {
     });
   }
 
+  function makeTagsHtml(kws){
+    const arr = Array.isArray(kws) ? kws : [];
+    if (arr.length === 0) return '<span style="color:#888;">—</span>';
+    return `<div class="tags">${arr.map(k => `<span class="tag">${escapeHtml(k)}</span>`).join("")}</div>`;
+  }
+
   function renderDesktop(filtered){
     tbody.innerHTML = "";
 
     for (const it of filtered) {
       const tr = document.createElement("tr");
-
-      // main row cells
       tr.innerHTML = `
         <td>${escapeHtml(it.speech_date || "")}</td>
         <td>${escapeHtml(it.speech_time || "")}</td>
@@ -406,16 +475,14 @@ async function main() {
         <td><button class="btn" data-key="${escapeHtml(it.key || "")}">展開</button></td>
       `;
 
-      // detail row (full width)
       const tr2 = document.createElement("tr");
       tr2.className = "detail-row";
       tr2.style.display = "none";
       tr2.setAttribute("data-detail-for", it.key || "");
-
       tr2.innerHTML = `
         <td colspan="6">
           <div class="detail-box">
-            ${buildDetailTableHtml(it.detail)}
+            ${buildDetailTableHtml(it.detail_json)}
           </div>
         </td>
       `;
@@ -424,13 +491,11 @@ async function main() {
       tbody.appendChild(tr2);
     }
 
-    // bind buttons
     tbody.querySelectorAll("button[data-key]").forEach(btn => {
       btn.addEventListener("click", () => {
         const key = btn.getAttribute("data-key");
-        const row = tbody.querySelector(`tr.detail-row[data-detail-for="${CSS.escape(key)}"]`);
+        const row = tbody.querySelector(\`tr.detail-row[data-detail-for="\${CSS.escape(key)}"]\`);
         if (!row) return;
-
         const open = row.style.display !== "none";
         row.style.display = open ? "none" : "table-row";
         btn.textContent = open ? "展開" : "收起";
@@ -440,13 +505,9 @@ async function main() {
 
   function renderMobile(filtered){
     cards.innerHTML = "";
-
     for (const it of filtered) {
       const card = document.createElement("div");
       card.className = "card";
-
-      const detailHtml = buildDetailTableHtml(it.detail);
-
       card.innerHTML = `
         <div class="top">
           <div>
@@ -464,7 +525,7 @@ async function main() {
 
         <details>
           <summary>Detail</summary>
-          ${detailHtml}
+          ${buildDetailTableHtml(it.detail_json)}
         </details>
       `;
       cards.appendChild(card);
@@ -476,7 +537,6 @@ async function main() {
     const filtered = filterItems(term);
 
     stat.textContent = `顯示 ${filtered.length} / ${items.length}`;
-
     empty.style.display = filtered.length === 0 ? "block" : "none";
 
     renderDesktop(filtered);
