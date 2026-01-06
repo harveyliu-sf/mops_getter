@@ -459,7 +459,7 @@ async function main() {
 
   function renderDesktop(filtered){
     tbody.innerHTML = "";
-
+    console.log("===renderDesktop start===");
     for (const it of filtered) {
       const tr = document.createElement("tr");
       tr.innerHTML = `
@@ -506,50 +506,51 @@ async function main() {
         btn.textContent = open ? "展開" : "收起";
       });
     });
-
-    function renderMobile(filtered){
-      cards.innerHTML = "";
-      for (const it of filtered) {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <div class="top">
-            <div>
-              <div style="font-weight:800;">${escapeHtml(it.company_id || "")} ${escapeHtml(it.company_name || "")}</div>
-              <div style="color:#666;font-size:12px;margin-top:2px;">${escapeHtml(it.speech_date || "")}</div>
-            </div>
-            <div class="time">${escapeHtml(it.speech_time || "")}</div>
-          </div>
-  
-          <div class="subject">${escapeHtml(it.subject || "")}</div>
-  
-          <div style="margin-top:8px;">${makeTagsHtml(it.matched_keywords)}</div>
-  
-          <div class="meta2 mono">抓取時間：${escapeHtml(it.fetched_at_tw || "")}</div>
-  
-          <details>
-            <summary>Detail</summary>
-            ${buildDetailTableHtml(it.detail_json)}
-          </details>
-        `;
-        cards.appendChild(card);
-      }
-    }
-
-    function render(){
-      const term = (q.value || "").trim();
-      const filtered = filterItems(term);
-  
-      stat.textContent = `顯示 ${filtered.length} / ${items.length}`;
-      empty.style.display = filtered.length === 0 ? "block" : "none";
-  
-      renderDesktop(filtered);
-      renderMobile(filtered);
-    }
-
-    q.addEventListener("input", render);
-    render();
   }
+
+  function renderMobile(filtered){
+    cards.innerHTML = "";
+    for (const it of filtered) {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="top">
+          <div>
+            <div style="font-weight:800;">${escapeHtml(it.company_id || "")} ${escapeHtml(it.company_name || "")}</div>
+            <div style="color:#666;font-size:12px;margin-top:2px;">${escapeHtml(it.speech_date || "")}</div>
+          </div>
+          <div class="time">${escapeHtml(it.speech_time || "")}</div>
+        </div>
+
+        <div class="subject">${escapeHtml(it.subject || "")}</div>
+
+        <div style="margin-top:8px;">${makeTagsHtml(it.matched_keywords)}</div>
+
+        <div class="meta2 mono">抓取時間：${escapeHtml(it.fetched_at_tw || "")}</div>
+
+        <details>
+          <summary>Detail</summary>
+          ${buildDetailTableHtml(it.detail_json)}
+        </details>
+      `;
+      cards.appendChild(card);
+    }
+  }
+
+  function render(){
+    const term = (q.value || "").trim();
+    const filtered = filterItems(term);
+
+    stat.textContent = `顯示 ${filtered.length} / ${items.length}`;
+    empty.style.display = filtered.length === 0 ? "block" : "none";
+
+    renderDesktop(filtered);
+    renderMobile(filtered);
+  }
+
+  q.addEventListener("input", render);
+  render();
+
 }
 
 main().catch(err => {
