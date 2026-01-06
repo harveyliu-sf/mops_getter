@@ -491,17 +491,19 @@ async function main() {
       tbody.appendChild(tr2);
     }
 
-    tbody.querySelectorAll("button[data-key]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const key = btn.getAttribute("data-key");
-        const row = tbody.querySelector(\`tr.detail-row[data-detail-for="\${CSS.escape(key)}"]\`);
-        if (!row) return;
-        const open = row.style.display !== "none";
-        row.style.display = open ? "none" : "table-row";
-        btn.textContent = open ? "展開" : "收起";
-      });
+  tbody.querySelectorAll("button[data-key]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const mainRow = btn.closest("tr");
+      if (!mainRow) return;
+  
+      const detailRow = mainRow.nextElementSibling;
+      if (!detailRow || !detailRow.classList.contains("detail-row")) return;
+  
+      const open = detailRow.style.display !== "none";
+      detailRow.style.display = open ? "none" : "table-row";
+      btn.textContent = open ? "展開" : "收起";
     });
-  }
+  });
 
   function renderMobile(filtered){
     cards.innerHTML = "";
