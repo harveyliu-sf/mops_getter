@@ -240,26 +240,33 @@
     .detail-row { display: table-row; }
     .detail-row td { padding: 0; }
     
-    /* 可動畫容器：預設收起 */
-    .detail-box {
-      margin: 10px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: var(--card);
+    /* ✅ 收起狀態：完全不佔高度（關鍵：margin/padding/border 都要是 0） */
+    .detail-box{
       overflow: hidden;
     
       max-height: 0;
       opacity: 0;
       transform: translateY(-4px);
+      transition: max-height 240ms ease, opacity 180ms ease, transform 240ms ease;
     
-      transition: max-height 220ms ease, opacity 180ms ease, transform 220ms ease;
+      /* 這三個是造成「空白高度」的元凶，收起時全部歸零 */
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
     }
     
-    /* 展開狀態（max-height 給一個夠大的值即可） */
-    .detail-row.is-open .detail-box {
-      max-height: 1200px; /* 依你 detail 長度調整，通常 1200~3000 足夠 */
+    /* ✅ 展開狀態：再把外觀加回來 */
+    .detail-row.is-open .detail-box{
+      max-height: 5000px;
       opacity: 1;
       transform: translateY(0);
+    
+      margin: 10px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
     }
 
     /* Mobile details animation */
