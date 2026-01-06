@@ -61,6 +61,7 @@ def http_post_json(url: str, payload: Dict[str, Any]) -> Dict[str, Any]:
     r.raise_for_status()
     return r.json()
 
+
 def load_state(state_path: str) -> Dict[str, Any]:
     """
     容錯讀取 state.json：
@@ -92,6 +93,7 @@ def load_state(state_path: str) -> Dict[str, Any]:
 
         return default
 
+
 def save_json(path: str, obj: Any) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -106,6 +108,38 @@ def save_csv(path: str, rows: List[Dict[str, Any]], fieldnames: List[str]) -> No
         for row in rows:
             w.writerow(row)
 
+######20260106新增######
+def load_json_file(path: str, default: Any):
+    if not os.path.exists(path):
+        return default
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            raw = f.read()
+        if not raw.strip():
+            return default
+        return json.loads(raw)
+    except Exception:
+        return default
+
+
+def update_manifest(manifest_path: str, csv_filename: str) -> None:
+    # manifest.json 格式：{"files": ["data_20260106.csv", ...]}
+    manifest = load_json_file(manifest_path, {"files": []})
+    files = manifest.get("files") if isinstance(manifest, dict) else []
+    if not isinstance(files, list):
+        files = []
+
+    if csv_filename not in files:
+        files.append(csv_filename)
+
+    # 排序：日期新到舊（檔名 data_YYYYMMDD.csv）
+    def key_fn(fn: str):
+        m = re.match(r"data_(\d{8})\.csv$", fn)
+        return m.group(1) if m else "00000000"
+
+    files = sorted(set(files), key=key_fn, reverse=True)
+    save_json(manifest_path, {"files": files})
+######20260106新增######
 
 def telegram_notify(token: str, chat_id: str, text: str) -> None:
     if not token or not chat_id:
@@ -234,15 +268,25 @@ def main():
             "detail_json": json.dumps(it["detail"], ensure_ascii=False),
             "fetched_at_tw": it["fetched_at_tw"],
         })
-
+        
+######20260106變更######
+    # 每天一份 CSV：data_YYYYMMDD.csv（西元年月日）
+    today_yyyymmdd = now_tw.strftime("%Y%m%d")
+    daily_csv_name = f"data_{today_yyyymmdd}.csv"
+    daily_csv_path = os.path.join("public", daily_csv_name)
+    
     save_csv(
-        args.out_csv,
+        daily_csv_path,
         csv_rows,
         fieldnames=[
             "key","speech_date","speech_time","company_id","company_name","subject",
             "matched_keywords","enterDate","marketKind","serialNumber","detail_json","fetched_at_tw"
         ],
     )
+    
+    # 更新 manifest.json，讓 index.html 知道有哪些 CSV
+    update_manifest("public/manifest.json", daily_csv_name)
+######20260106變更######
 
     # state 存檔
     save_json(args.state, {"seen_keys": sorted(seen_keys)})
