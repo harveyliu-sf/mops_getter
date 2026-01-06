@@ -235,6 +235,48 @@
       h1{ font-size: 18px; }
       .search{ padding: 9px 10px; }
     }
+
+    /* detail row 永遠存在，靠內層做動畫 */
+    .detail-row { display: table-row; }
+    .detail-row td { padding: 0; }
+    
+    /* 可動畫容器：預設收起 */
+    .detail-box {
+      margin: 10px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
+      overflow: hidden;
+    
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-4px);
+    
+      transition: max-height 220ms ease, opacity 180ms ease, transform 220ms ease;
+    }
+    
+    /* 展開狀態（max-height 給一個夠大的值即可） */
+    .detail-row.is-open .detail-box {
+      max-height: 1200px; /* 依你 detail 長度調整，通常 1200~3000 足夠 */
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Mobile details animation */
+    .card details .m-detail{
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-4px);
+      transition: max-height 220ms ease, opacity 180ms ease, transform 220ms ease;
+    }
+    
+    .card details[open] .m-detail{
+      max-height: 1600px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
   </style>
 </head>
 
@@ -271,7 +313,7 @@
 
     <div id="empty" class="empty" style="display:none;">沒有符合的資料。</div>
   </div>
-
+<script src="https://unpkg.com/@motionone/dom/dist/motion-one.min.js"></script>
 <script>
 function escapeHtml(s) {
   return String(s ?? "")
@@ -502,9 +544,8 @@ async function main() {
         const detailRow = mainRow.nextElementSibling;
         if (!detailRow || !detailRow.classList.contains("detail-row")) return;
     
-        const open = detailRow.style.display !== "none";
-        detailRow.style.display = open ? "none" : "table-row";
-        btn.textContent = open ? "展開" : "收起";
+        const open = detailRow.classList.toggle("is-open");
+        btn.textContent = open ? "收起" : "展開";
       });
     });
   }
@@ -532,7 +573,9 @@ async function main() {
 
         <details>
           <summary>Detail</summary>
-          ${buildDetailTableHtml(it.detail_json)}
+            <div class="m-detail">
+              ${buildDetailTableHtml(it.detail_json)}
+            </div>
         </details>
       `;
       cards.appendChild(card);
