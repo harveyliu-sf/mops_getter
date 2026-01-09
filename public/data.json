@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-09 09:40:15",
+    "run_at_tw": "2026-01-09 12:39:03",
     "query": {
       "year": "115",
       "month": "1",
@@ -18,7 +18,7 @@
       "庫藏股"
     ],
     "matched_count": 8,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "台新新光金"
         },
-        "datetime": "115/01/09 09:40:16"
+        "datetime": "115/01/09 12:39:04"
       },
-      "fetched_at_tw": "2026-01-09 09:40:15"
+      "fetched_at_tw": "2026-01-09 12:39:03"
     },
     {
       "key": "1150108|sii|2323|1",
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/09 09:40:17"
+        "datetime": "115/01/09 12:39:05"
       },
-      "fetched_at_tw": "2026-01-09 09:40:15"
+      "fetched_at_tw": "2026-01-09 12:39:03"
     },
     {
       "key": "1150108|sii|5215|1",
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "科嘉-KY"
         },
-        "datetime": "115/01/09 09:40:17"
+        "datetime": "115/01/09 12:39:05"
       },
-      "fetched_at_tw": "2026-01-09 09:40:15"
+      "fetched_at_tw": "2026-01-09 12:39:03"
     },
     {
       "key": "1150108|sii|5215|2",
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "科嘉-KY"
         },
-        "datetime": "115/01/09 09:40:18"
+        "datetime": "115/01/09 12:39:06"
       },
-      "fetched_at_tw": "2026-01-09 09:40:15"
+      "fetched_at_tw": "2026-01-09 12:39:03"
     },
     {
       "key": "1150108|otc|3689|1",
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "湧德"
         },
-        "datetime": "115/01/09 09:40:19"
+        "datetime": "115/01/09 12:39:07"
       },
-      "fetched_at_tw": "2026-01-09 09:40:15"
+      "fetched_at_tw": "2026-01-09 12:39:03"
     },
     {
       "key": "1150108|otc|3522|1",
@@ -581,9 +581,9 @@
           ],
           "companyAbbreviation": "御嵿"
         },
-        "datetime": "115/01/09 09:40:19"
+        "datetime": "115/01/09 12:39:08"
       },
-      "fetched_at_tw": "2026-01-09 09:40:15"
+      "fetched_at_tw": "2026-01-09 12:39:03"
     },
     {
       "key": "1150108|rotc|5262|1",
@@ -675,9 +675,9 @@
           ],
           "companyAbbreviation": "立達"
         },
-        "datetime": "115/01/09 09:40:19"
+        "datetime": "115/01/09 12:39:09"
       },
-      "fetched_at_tw": "2026-01-09 09:40:15"
+      "fetched_at_tw": "2026-01-09 12:39:03"
     },
     {
       "key": "1150109|pub|6907|3",
@@ -769,9 +769,9 @@
           ],
           "companyAbbreviation": "雅特力-KY"
         },
-        "datetime": "115/01/09 09:40:20"
+        "datetime": "115/01/09 12:39:10"
       },
-      "fetched_at_tw": "2026-01-09 09:40:15"
+      "fetched_at_tw": "2026-01-09 12:39:03"
     }
   ]
 }
