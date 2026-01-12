@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-12 11:47:52",
+    "run_at_tw": "2026-01-12 12:49:15",
     "query": {
       "year": "115",
       "month": "1",
@@ -18,7 +18,7 @@
       "庫藏股"
     ],
     "matched_count": 1,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -32,10 +32,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "enterDate": "1150112",
         "serialNumber": 2,
-        "companyId": "1819",
-        "marketKind": "pub"
+        "enterDate": "1150112",
+        "marketKind": "pub",
+        "companyId": "1819"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "豐鼎"
         },
-        "datetime": "115/01/12 11:47:53"
+        "datetime": "115/01/12 12:49:16"
       },
-      "fetched_at_tw": "2026-01-12 11:47:52"
+      "fetched_at_tw": "2026-01-12 12:49:15"
     }
   ]
 }
