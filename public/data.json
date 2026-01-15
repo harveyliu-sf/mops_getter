@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-15 14:32:05",
+    "run_at_tw": "2026-01-15 15:24:02",
     "query": {
       "year": "115",
       "month": "1",
@@ -17,8 +17,8 @@
       "公司債",
       "庫藏股"
     ],
-    "matched_count": 12,
-    "new_matched_count": 0
+    "matched_count": 14,
+    "new_matched_count": 2
   },
   "items": [
     {
@@ -32,10 +32,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150114",
-        "marketKind": "sii",
-        "companyId": "2313"
+        "serialNumber": 1,
+        "companyId": "2313",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "華通"
         },
-        "datetime": "115/01/15 14:32:06"
+        "datetime": "115/01/15 15:24:04"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|sii|2545|1",
@@ -126,10 +126,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150114",
-        "marketKind": "sii",
-        "companyId": "2545"
+        "serialNumber": 1,
+        "companyId": "2545",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "皇翔"
         },
-        "datetime": "115/01/15 14:32:09"
+        "datetime": "115/01/15 15:24:05"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|sii|2545|2",
@@ -220,10 +220,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150114",
-        "marketKind": "sii",
-        "companyId": "2545"
+        "serialNumber": 2,
+        "companyId": "2545",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "皇翔"
         },
-        "datetime": "115/01/15 14:32:09"
+        "datetime": "115/01/15 15:24:06"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150115|sii|3708|1",
@@ -314,10 +314,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150115",
-        "marketKind": "sii",
-        "companyId": "3708"
+        "serialNumber": 1,
+        "companyId": "3708",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "上緯投控"
         },
-        "datetime": "115/01/15 14:32:10"
+        "datetime": "115/01/15 15:24:07"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|sii|3708|1",
@@ -408,10 +408,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150114",
-        "marketKind": "sii",
-        "companyId": "3708"
+        "serialNumber": 1,
+        "companyId": "3708",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "上緯投控"
         },
-        "datetime": "115/01/15 14:32:11"
+        "datetime": "115/01/15 15:24:07"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|sii|3708|3",
@@ -502,10 +502,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150114",
-        "marketKind": "sii",
-        "companyId": "3708"
+        "serialNumber": 3,
+        "companyId": "3708",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -581,9 +581,197 @@
           ],
           "companyAbbreviation": "上緯投控"
         },
-        "datetime": "115/01/15 14:32:12"
+        "datetime": "115/01/15 15:24:08"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
+    },
+    {
+      "key": "1150115|sii|9955|1",
+      "speech_date": "115/01/15",
+      "speech_time": "15:14:12",
+      "company_id": "9955",
+      "company_name": "佳龍",
+      "subject": "因本公司有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解。",
+      "matched_keywords": [
+        "有價證券"
+      ],
+      "detail_params": {
+        "enterDate": "1150115",
+        "serialNumber": 1,
+        "companyId": "9955",
+        "marketKind": "sii"
+      },
+      "detail": {
+        "code": 200,
+        "message": "查詢成功",
+        "result": {
+          "marketName": "上市公司",
+          "companyId": "9955",
+          "data": [
+            [
+              1,
+              "115/01/15",
+              "15:14:12",
+              "陸怡豪",
+              "策略顧問",
+              "(03)473-6566",
+              "因本公司有價證券於集中交易市場達公布注意交易資訊標準，故公\r\n布相關財務業務等重大訊息，以利投資人區別瞭解。",
+              "51",
+              "115/01/15",
+              "1.事實發生日:115/01/15\n2.發生緣由:依臺灣證券交易所股份有限公司通知辦理\n3.財務業務資訊:\n                                                           單位:新臺幣佰萬元\n期間        最近一月   與去年同期   最近一季    與去年同期      最近四季累計\n--------- ------------ --------- -------------  ---------- ----------------\n           114年11月     增 減%    114年第3季      增 減%      113年第4季至\n                                                                 114年第3季\n科目      (個體自結數)        (IFRS-合併核閱數)            (IFRS-合併核閱數)\n--------- ------------ --------- -------------  ---------- ----------------\n營業收入        120      41.06%         382        32.14%          1,358\n稅前淨利         (7)     64.40%           4       116.48%           (124)\n本期淨利         (7)     64.40%           4       116.48%           (124)\n每股盈餘(元)  (0.06)     64.81%        0.04       119.05%          (1.19)\n4.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理\n  程序」第4條所列重大訊息之情事（如「有」，請說明）:無\n5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理\n  程序」第11條所列重大訊息說明記者會之情事:無\n6.完整財務資訊請至公開資訊觀測站查閱，路徑如下：\n(1)近期營業收入及損益資訊：基本資料>精華版\n(2)歷史每月營業收入：營運概況>每月營收>採用IFRSs後之月營業收入資訊\n(3)歷史損益(會計師查核/核閱數)：財務報表>採IFRSs後>合併/個別報表>綜合損益表\n(4)歷史損益(自願性公告自結數)：營運概況>自結損益公告:\n7.其他應敘明事項:無"
+            ]
+          ],
+          "footer": [
+            "以上資料均由各公司依發言當時所屬市場別之規定申報後，由本系統對外公佈，資料如有虛偽不實，均由該公司負責。"
+          ],
+          "header": {
+            "note": [],
+            "subTitle": [],
+            "mainTitle": [
+              "公司當日重大訊息之詳細內容"
+            ]
+          },
+          "titles": [
+            {
+              "main": "序號",
+              "sub": []
+            },
+            {
+              "main": "發言日期",
+              "sub": []
+            },
+            {
+              "main": "發言時間",
+              "sub": []
+            },
+            {
+              "main": "發言人",
+              "sub": []
+            },
+            {
+              "main": "發言人職稱",
+              "sub": []
+            },
+            {
+              "main": "發言人電話",
+              "sub": []
+            },
+            {
+              "main": "主旨",
+              "sub": []
+            },
+            {
+              "main": "符合條款",
+              "sub": []
+            },
+            {
+              "main": "事實發生日",
+              "sub": []
+            },
+            {
+              "main": "說明",
+              "sub": []
+            }
+          ],
+          "companyAbbreviation": "佳龍"
+        },
+        "datetime": "115/01/15 15:24:08"
+      },
+      "fetched_at_tw": "2026-01-15 15:24:02"
+    },
+    {
+      "key": "1150115|sii|2485|2",
+      "speech_date": "115/01/15",
+      "speech_time": "15:20:48",
+      "company_id": "2485",
+      "company_name": "兆赫",
+      "subject": "係因本公司有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解。",
+      "matched_keywords": [
+        "有價證券"
+      ],
+      "detail_params": {
+        "enterDate": "1150115",
+        "serialNumber": 2,
+        "companyId": "2485",
+        "marketKind": "sii"
+      },
+      "detail": {
+        "code": 200,
+        "message": "查詢成功",
+        "result": {
+          "marketName": "上市公司",
+          "companyId": "2485",
+          "data": [
+            [
+              2,
+              "115/01/15",
+              "15:20:48",
+              "何文順",
+              "財務長",
+              "(02)2225-1929#568",
+              "係因本公司有價證券於集中交易市場達公布注意交易資訊\r\n標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解。",
+              "51",
+              "115/01/15",
+              "1.事實發生日:115/01/15\n2.發生緣由:依據臺灣證券交易所股份有限公司指示辦理。\n3.財務業務資訊:\n期間            (月)                    (季)            (最近四季累計)\n========================================================================\n        最近一月    與去年同期   最近一季    與去年同期   (113年第4季至\n                                                           114年第3季)\n科目   (114年12月)    增減％   (114年第3季)    增減％\n       (合併自結數)            (合併核閱數)             (合併查核/核閱數)\n========================================================================\n營業收入(百萬) 328     129%        601         119%        2,054\n稅前淨利(百萬)  39     144%        (12)         96%        (684)\n歸屬母公司\n業主淨利(百萬)  39     152%        (12)         96%        (657)\n每股盈餘(元)  0.12     152%       (0.04)        95%        (2.07)\n因客戶端產品驗證通過，正式進入量產與備貨階段，帶動出貨量顯著提升\n，致使本月營收較去年同期大幅成長。\n4.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理\n  程序」第4條所列重大訊息之情事（如「有」，請說明）:無。\n5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理\n  程序」第11條所列重大訊息說明記者會之情事:無。\n6.完整財務資訊請至公開資訊觀測站查閱，路徑如下：\n(1)近期營業收入及損益資訊：基本資料>精華版\n(2)歷史每月營業收入：營運概況>每月營收>採用IFRSs後之月營業收入資訊\n(3)歷史損益(會計師查核/核閱數)：財務報表>採IFRSs後>合併/個別報表>綜合損益表\n(4)歷史損益(自願性公告自結數)：營運概況>自結損益公告:無。\n7.其他應敘明事項:無。"
+            ]
+          ],
+          "footer": [
+            "以上資料均由各公司依發言當時所屬市場別之規定申報後，由本系統對外公佈，資料如有虛偽不實，均由該公司負責。"
+          ],
+          "header": {
+            "note": [],
+            "subTitle": [],
+            "mainTitle": [
+              "公司當日重大訊息之詳細內容"
+            ]
+          },
+          "titles": [
+            {
+              "main": "序號",
+              "sub": []
+            },
+            {
+              "main": "發言日期",
+              "sub": []
+            },
+            {
+              "main": "發言時間",
+              "sub": []
+            },
+            {
+              "main": "發言人",
+              "sub": []
+            },
+            {
+              "main": "發言人職稱",
+              "sub": []
+            },
+            {
+              "main": "發言人電話",
+              "sub": []
+            },
+            {
+              "main": "主旨",
+              "sub": []
+            },
+            {
+              "main": "符合條款",
+              "sub": []
+            },
+            {
+              "main": "事實發生日",
+              "sub": []
+            },
+            {
+              "main": "說明",
+              "sub": []
+            }
+          ],
+          "companyAbbreviation": "兆赫"
+        },
+        "datetime": "115/01/15 15:24:09"
+      },
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|otc|8038|2",
@@ -596,10 +784,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150114",
-        "marketKind": "otc",
-        "companyId": "8038"
+        "serialNumber": 2,
+        "companyId": "8038",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -675,9 +863,9 @@
           ],
           "companyAbbreviation": "長園科"
         },
-        "datetime": "115/01/15 14:32:12"
+        "datetime": "115/01/15 15:24:09"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|otc|6179|2",
@@ -690,10 +878,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150114",
-        "marketKind": "otc",
-        "companyId": "6179"
+        "serialNumber": 2,
+        "companyId": "6179",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -769,9 +957,9 @@
           ],
           "companyAbbreviation": "亞通"
         },
-        "datetime": "115/01/15 14:32:13"
+        "datetime": "115/01/15 15:24:10"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|otc|6640|2",
@@ -784,10 +972,10 @@
         "自結合併"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150114",
-        "marketKind": "otc",
-        "companyId": "6640"
+        "serialNumber": 2,
+        "companyId": "6640",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -863,9 +1051,9 @@
           ],
           "companyAbbreviation": "均華"
         },
-        "datetime": "115/01/15 14:32:14"
+        "datetime": "115/01/15 15:24:10"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|otc|6163|1",
@@ -878,10 +1066,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150114",
-        "marketKind": "otc",
-        "companyId": "6163"
+        "serialNumber": 1,
+        "companyId": "6163",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -957,9 +1145,9 @@
           ],
           "companyAbbreviation": "華電網"
         },
-        "datetime": "115/01/15 14:32:14"
+        "datetime": "115/01/15 15:24:11"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150114|otc|6904|1",
@@ -972,10 +1160,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150114",
-        "marketKind": "otc",
-        "companyId": "6904"
+        "serialNumber": 1,
+        "companyId": "6904",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -1051,9 +1239,9 @@
           ],
           "companyAbbreviation": "伯鑫"
         },
-        "datetime": "115/01/15 14:32:15"
+        "datetime": "115/01/15 15:24:11"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     },
     {
       "key": "1150109|otc|6904|2",
@@ -1066,10 +1254,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150109",
-        "marketKind": "otc",
-        "companyId": "6904"
+        "serialNumber": 2,
+        "companyId": "6904",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -1145,9 +1333,9 @@
           ],
           "companyAbbreviation": "伯鑫"
         },
-        "datetime": "115/01/15 14:32:16"
+        "datetime": "115/01/15 15:24:12"
       },
-      "fetched_at_tw": "2026-01-15 14:32:05"
+      "fetched_at_tw": "2026-01-15 15:24:02"
     }
   ]
 }
