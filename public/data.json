@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-17 06:45:15",
+    "run_at_tw": "2026-01-17 07:18:43",
     "query": {
       "year": "115",
       "month": "1",
@@ -32,10 +32,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 1,
-        "companyId": "2323",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "2323"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/17 06:45:16"
+        "datetime": "115/01/17 07:18:44"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|5215|1",
@@ -126,10 +126,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 1,
-        "companyId": "5215",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "5215"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "科嘉-KY"
         },
-        "datetime": "115/01/17 06:45:17"
+        "datetime": "115/01/17 07:18:45"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|5215|2",
@@ -220,10 +220,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 2,
-        "companyId": "5215",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "5215"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "科嘉-KY"
         },
-        "datetime": "115/01/17 06:45:18"
+        "datetime": "115/01/17 07:18:47"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|2107|1",
@@ -314,10 +314,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 1,
-        "companyId": "2107",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "2107"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "厚生"
         },
-        "datetime": "115/01/17 06:45:19"
+        "datetime": "115/01/17 07:18:48"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|2107|2",
@@ -408,10 +408,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 2,
-        "companyId": "2107",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "2107"
       },
       "detail": {
         "code": 200,
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "厚生"
         },
-        "datetime": "115/01/17 06:45:19"
+        "datetime": "115/01/17 07:18:49"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|2545|1",
@@ -502,10 +502,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 1,
-        "companyId": "2545",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "2545"
       },
       "detail": {
         "code": 200,
@@ -581,9 +581,9 @@
           ],
           "companyAbbreviation": "皇翔"
         },
-        "datetime": "115/01/17 06:45:20"
+        "datetime": "115/01/17 07:18:49"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|2545|2",
@@ -596,10 +596,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 2,
-        "companyId": "2545",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "2545"
       },
       "detail": {
         "code": 200,
@@ -675,9 +675,9 @@
           ],
           "companyAbbreviation": "皇翔"
         },
-        "datetime": "115/01/17 06:45:21"
+        "datetime": "115/01/17 07:18:50"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|2491|1",
@@ -690,10 +690,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 1,
-        "companyId": "2491",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "2491"
       },
       "detail": {
         "code": 200,
@@ -769,9 +769,9 @@
           ],
           "companyAbbreviation": "吉祥全"
         },
-        "datetime": "115/01/17 06:45:22"
+        "datetime": "115/01/17 07:18:51"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|2491|2",
@@ -784,10 +784,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 2,
-        "companyId": "2491",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "2491"
       },
       "detail": {
         "code": 200,
@@ -863,9 +863,9 @@
           ],
           "companyAbbreviation": "吉祥全"
         },
-        "datetime": "115/01/17 06:45:22"
+        "datetime": "115/01/17 07:18:52"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|sii|2491|3",
@@ -878,10 +878,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 3,
-        "companyId": "2491",
-        "marketKind": "sii"
+        "enterDate": "1150116",
+        "marketKind": "sii",
+        "companyId": "2491"
       },
       "detail": {
         "code": 200,
@@ -957,9 +957,9 @@
           ],
           "companyAbbreviation": "吉祥全"
         },
-        "datetime": "115/01/17 06:45:23"
+        "datetime": "115/01/17 07:18:53"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|otc|8927|3",
@@ -972,10 +972,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 3,
-        "companyId": "8927",
-        "marketKind": "otc"
+        "enterDate": "1150116",
+        "marketKind": "otc",
+        "companyId": "8927"
       },
       "detail": {
         "code": 200,
@@ -1051,9 +1051,9 @@
           ],
           "companyAbbreviation": "北基"
         },
-        "datetime": "115/01/17 06:45:24"
+        "datetime": "115/01/17 07:18:54"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     },
     {
       "key": "1150116|otc|6179|1",
@@ -1066,10 +1066,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "enterDate": "1150116",
         "serialNumber": 1,
-        "companyId": "6179",
-        "marketKind": "otc"
+        "enterDate": "1150116",
+        "marketKind": "otc",
+        "companyId": "6179"
       },
       "detail": {
         "code": 200,
@@ -1145,9 +1145,9 @@
           ],
           "companyAbbreviation": "亞通"
         },
-        "datetime": "115/01/17 06:45:25"
+        "datetime": "115/01/17 07:18:54"
       },
-      "fetched_at_tw": "2026-01-17 06:45:15"
+      "fetched_at_tw": "2026-01-17 07:18:43"
     }
   ]
 }
