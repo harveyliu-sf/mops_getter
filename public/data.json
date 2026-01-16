@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-16 07:41:34",
+    "run_at_tw": "2026-01-16 09:40:46",
     "query": {
       "year": "115",
       "month": "1",
@@ -17,8 +17,8 @@
       "公司債",
       "庫藏股"
     ],
-    "matched_count": 10,
-    "new_matched_count": 0
+    "matched_count": 11,
+    "new_matched_count": 1
   },
   "items": [
     {
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "元大金"
         },
-        "datetime": "115/01/16 07:41:36"
+        "datetime": "115/01/16 09:40:47"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|sii|2323|1",
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/16 07:41:36"
+        "datetime": "115/01/16 09:40:48"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|sii|2323|2",
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/16 07:41:37"
+        "datetime": "115/01/16 09:40:49"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|sii|1583|1",
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "程泰"
         },
-        "datetime": "115/01/16 07:41:37"
+        "datetime": "115/01/16 09:40:49"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|sii|4961|1",
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "天鈺"
         },
-        "datetime": "115/01/16 07:41:38"
+        "datetime": "115/01/16 09:40:50"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|otc|8044|1",
@@ -581,9 +581,9 @@
           ],
           "companyAbbreviation": "網家"
         },
-        "datetime": "115/01/16 07:41:38"
+        "datetime": "115/01/16 09:40:50"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|otc|3260|2",
@@ -675,9 +675,9 @@
           ],
           "companyAbbreviation": "威剛"
         },
-        "datetime": "115/01/16 07:41:39"
+        "datetime": "115/01/16 09:40:51"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|otc|4804|3",
@@ -769,9 +769,9 @@
           ],
           "companyAbbreviation": "大略-KY"
         },
-        "datetime": "115/01/16 07:41:40"
+        "datetime": "115/01/16 09:40:51"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|otc|4991|1",
@@ -863,9 +863,33 @@
           ],
           "companyAbbreviation": "環宇-KY"
         },
-        "datetime": "115/01/16 07:41:40"
+        "datetime": "115/01/16 09:40:52"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
+    },
+    {
+      "key": "1150116|otc|5309|1",
+      "speech_date": "115/01/16",
+      "speech_time": "08:34:31",
+      "company_id": "5309",
+      "company_name": "系統電",
+      "subject": "公告系統電子工業股份有限公司國內第五次無擔保(例：第一次有擔保)轉(交)換公司債(簡稱：系統電五，代碼：53095)停止受理轉交換等相關事項。",
+      "matched_keywords": [
+        "公司債"
+      ],
+      "detail_params": {
+        "serialNumber": 1,
+        "enterDate": "1150116",
+        "marketKind": "otc",
+        "companyId": "5309"
+      },
+      "detail": {
+        "code": 406,
+        "message": "查無相符資料",
+        "result": null,
+        "datetime": "115/01/16 09:40:53"
+      },
+      "fetched_at_tw": "2026-01-16 09:40:46"
     },
     {
       "key": "1150115|rotc|7857|3",
@@ -957,9 +981,9 @@
           ],
           "companyAbbreviation": "合水先進"
         },
-        "datetime": "115/01/16 07:41:41"
+        "datetime": "115/01/16 09:40:53"
       },
-      "fetched_at_tw": "2026-01-16 07:41:34"
+      "fetched_at_tw": "2026-01-16 09:40:46"
     }
   ]
 }
