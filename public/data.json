@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-20 11:42:32",
+    "run_at_tw": "2026-01-20 12:43:20",
     "query": {
       "year": "115",
       "month": "1",
@@ -18,7 +18,7 @@
       "庫藏股"
     ],
     "matched_count": 10,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "裕隆"
         },
-        "datetime": "115/01/20 11:42:33"
+        "datetime": "115/01/20 12:43:23"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150119|sii|2337|2",
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "旺宏"
         },
-        "datetime": "115/01/20 11:42:34"
+        "datetime": "115/01/20 12:43:24"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150119|sii|2323|1",
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/20 11:42:35"
+        "datetime": "115/01/20 12:43:25"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150119|sii|2323|2",
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/20 11:42:35"
+        "datetime": "115/01/20 12:43:27"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150119|sii|2323|3",
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/20 11:42:36"
+        "datetime": "115/01/20 12:43:28"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150119|sii|3189|2",
@@ -581,9 +581,9 @@
           ],
           "companyAbbreviation": "景碩"
         },
-        "datetime": "115/01/20 11:42:36"
+        "datetime": "115/01/20 12:43:28"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150119|sii|2408|2",
@@ -675,9 +675,9 @@
           ],
           "companyAbbreviation": "南亞科"
         },
-        "datetime": "115/01/20 11:42:37"
+        "datetime": "115/01/20 12:43:29"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150119|sii|1101|1",
@@ -769,9 +769,9 @@
           ],
           "companyAbbreviation": "台泥"
         },
-        "datetime": "115/01/20 11:42:38"
+        "datetime": "115/01/20 12:43:30"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150119|sii|6753|1",
@@ -863,9 +863,9 @@
           ],
           "companyAbbreviation": "龍德造船"
         },
-        "datetime": "115/01/20 11:42:38"
+        "datetime": "115/01/20 12:43:31"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     },
     {
       "key": "1150120|pub|1819|1",
@@ -957,9 +957,9 @@
           ],
           "companyAbbreviation": "豐鼎"
         },
-        "datetime": "115/01/20 11:42:39"
+        "datetime": "115/01/20 12:43:32"
       },
-      "fetched_at_tw": "2026-01-20 11:42:32"
+      "fetched_at_tw": "2026-01-20 12:43:20"
     }
   ]
 }
