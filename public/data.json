@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-22 01:53:15",
+    "run_at_tw": "2026-01-22 02:40:10",
     "query": {
       "year": "115",
       "month": "1",
@@ -18,7 +18,7 @@
       "庫藏股"
     ],
     "matched_count": 10,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/22 01:53:15"
+        "datetime": "115/01/22 02:40:11"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150121|sii|2323|2",
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/22 01:53:16"
+        "datetime": "115/01/22 02:40:11"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150121|sii|2323|3",
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/22 01:53:17"
+        "datetime": "115/01/22 02:40:12"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150121|sii|2323|4",
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/22 01:53:17"
+        "datetime": "115/01/22 02:40:13"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150115|sii|8454|2",
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "富邦媒"
         },
-        "datetime": "115/01/22 01:53:18"
+        "datetime": "115/01/22 02:40:13"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150121|sii|1101|1",
@@ -581,9 +581,9 @@
           ],
           "companyAbbreviation": "台泥"
         },
-        "datetime": "115/01/22 01:53:18"
+        "datetime": "115/01/22 02:40:14"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150121|otc|1584|2",
@@ -675,9 +675,9 @@
           ],
           "companyAbbreviation": "精剛"
         },
-        "datetime": "115/01/22 01:53:19"
+        "datetime": "115/01/22 02:40:14"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150121|otc|4946|1",
@@ -769,9 +769,9 @@
           ],
           "companyAbbreviation": "辣椒"
         },
-        "datetime": "115/01/22 01:53:19"
+        "datetime": "115/01/22 02:40:15"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150121|otc|5475|3",
@@ -863,9 +863,9 @@
           ],
           "companyAbbreviation": "德宏"
         },
-        "datetime": "115/01/22 01:53:20"
+        "datetime": "115/01/22 02:40:15"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     },
     {
       "key": "1150122|otc|4971|1",
@@ -957,9 +957,9 @@
           ],
           "companyAbbreviation": "IET-KY"
         },
-        "datetime": "115/01/22 01:53:20"
+        "datetime": "115/01/22 02:40:16"
       },
-      "fetched_at_tw": "2026-01-22 01:53:15"
+      "fetched_at_tw": "2026-01-22 02:40:10"
     }
   ]
 }
