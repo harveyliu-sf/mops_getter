@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-22 09:43:07",
+    "run_at_tw": "2026-01-22 11:46:42",
     "query": {
       "year": "115",
       "month": "1",
@@ -17,8 +17,8 @@
       "公司債",
       "庫藏股"
     ],
-    "matched_count": 10,
-    "new_matched_count": 0
+    "matched_count": 13,
+    "new_matched_count": 3
   },
   "items": [
     {
@@ -32,10 +32,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150121",
-        "marketKind": "sii",
-        "companyId": "2323"
+        "serialNumber": 1,
+        "companyId": "2323",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/22 09:43:08"
+        "datetime": "115/01/22 11:46:45"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150121|sii|2323|2",
@@ -126,10 +126,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150121",
-        "marketKind": "sii",
-        "companyId": "2323"
+        "serialNumber": 2,
+        "companyId": "2323",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/22 09:43:08"
+        "datetime": "115/01/22 11:46:45"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150121|sii|2323|3",
@@ -220,10 +220,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150121",
-        "marketKind": "sii",
-        "companyId": "2323"
+        "serialNumber": 3,
+        "companyId": "2323",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/22 09:43:10"
+        "datetime": "115/01/22 11:46:47"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150121|sii|2323|4",
@@ -314,10 +314,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 4,
         "enterDate": "1150121",
-        "marketKind": "sii",
-        "companyId": "2323"
+        "serialNumber": 4,
+        "companyId": "2323",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "中環"
         },
-        "datetime": "115/01/22 09:43:14"
+        "datetime": "115/01/22 11:46:48"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150115|sii|8454|2",
@@ -408,10 +408,10 @@
         "資本支出"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150115",
-        "marketKind": "sii",
-        "companyId": "8454"
+        "serialNumber": 2,
+        "companyId": "8454",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "富邦媒"
         },
-        "datetime": "115/01/22 09:43:15"
+        "datetime": "115/01/22 11:46:49"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150121|sii|1101|1",
@@ -502,10 +502,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150121",
-        "marketKind": "sii",
-        "companyId": "1101"
+        "serialNumber": 1,
+        "companyId": "1101",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -581,9 +581,9 @@
           ],
           "companyAbbreviation": "台泥"
         },
-        "datetime": "115/01/22 09:43:15"
+        "datetime": "115/01/22 11:46:50"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150121|otc|1584|2",
@@ -596,10 +596,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150121",
-        "marketKind": "otc",
-        "companyId": "1584"
+        "serialNumber": 2,
+        "companyId": "1584",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -675,9 +675,9 @@
           ],
           "companyAbbreviation": "精剛"
         },
-        "datetime": "115/01/22 09:43:16"
+        "datetime": "115/01/22 11:46:50"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150121|otc|4946|1",
@@ -690,10 +690,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150121",
-        "marketKind": "otc",
-        "companyId": "4946"
+        "serialNumber": 1,
+        "companyId": "4946",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -769,9 +769,9 @@
           ],
           "companyAbbreviation": "辣椒"
         },
-        "datetime": "115/01/22 09:43:16"
+        "datetime": "115/01/22 11:46:51"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150121|otc|5475|3",
@@ -784,10 +784,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150121",
-        "marketKind": "otc",
-        "companyId": "5475"
+        "serialNumber": 3,
+        "companyId": "5475",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -863,9 +863,9 @@
           ],
           "companyAbbreviation": "德宏"
         },
-        "datetime": "115/01/22 09:43:17"
+        "datetime": "115/01/22 11:46:52"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
     },
     {
       "key": "1150122|otc|4971|1",
@@ -878,10 +878,10 @@
         "有價證券"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150122",
-        "marketKind": "otc",
-        "companyId": "4971"
+        "serialNumber": 1,
+        "companyId": "4971",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -957,9 +957,291 @@
           ],
           "companyAbbreviation": "IET-KY"
         },
-        "datetime": "115/01/22 09:43:17"
+        "datetime": "115/01/22 11:46:53"
       },
-      "fetched_at_tw": "2026-01-22 09:43:07"
+      "fetched_at_tw": "2026-01-22 11:46:42"
+    },
+    {
+      "key": "1150122|otc|5704|1",
+      "speech_date": "115/01/22",
+      "speech_time": "09:51:00",
+      "company_id": "5704",
+      "company_name": "老爺知",
+      "subject": "公告本公司114年現金增資全體董事放棄認購股數達得認購股數二分之一以上，並洽特定人認購事宜。",
+      "matched_keywords": [
+        "現金增資"
+      ],
+      "detail_params": {
+        "enterDate": "1150122",
+        "serialNumber": 1,
+        "companyId": "5704",
+        "marketKind": "otc"
+      },
+      "detail": {
+        "code": 200,
+        "message": "查詢成功",
+        "result": {
+          "marketName": "上櫃公司",
+          "companyId": "5704",
+          "data": [
+            [
+              1,
+              "115/01/22",
+              "09:51:00",
+              "盧炳宏",
+              "財務長",
+              "089510680-830",
+              "公告本公司114年現金增資全體董事放棄認購股數達得認購\r\n股數二分之一以上，並洽特定人認購事宜。",
+              "45",
+              "115/01/22",
+              "1.事實發生日:115/01/22\n2.董監事放棄認購原因:財務規劃。\n3.董監事姓名、放棄認購股數及其占得認購股數之比率:\n(1)董事:林清波;\n放棄認購股數:306,766股;占得認購股數之比率:100%。\n(2)董事:廖年祈;\n放棄認購股數:905,107股；占得認購股數之比率:100%。\n(3)董事:廖年毅;\n放棄認購股數:912,300股；占得認購股數之比率:100%。\n(4)董事:林佩薰;\n放棄認購股數:580,265股；占得認購股數之比率:100%。\n(5)董事:林炎煌;\n放棄認購股數:676,765股；占得認購股數之比率:100%。\n(6)董事:邱魏叔雲;\n放棄認購股數:609,340股；占得認購股數之比率:100%。\n4.特定人姓名及其認購股數:上述董事放棄認購之股數，董事會\n授權董事長洽特定人認購之。\n5.其他應敘明事項:無。"
+            ]
+          ],
+          "footer": [
+            "以上資料均由各公司依發言當時所屬市場別之規定申報後，由本系統對外公佈，資料如有虛偽不實，均由該公司負責。"
+          ],
+          "header": {
+            "note": [],
+            "subTitle": [],
+            "mainTitle": [
+              "公司當日重大訊息之詳細內容"
+            ]
+          },
+          "titles": [
+            {
+              "main": "序號",
+              "sub": []
+            },
+            {
+              "main": "發言日期",
+              "sub": []
+            },
+            {
+              "main": "發言時間",
+              "sub": []
+            },
+            {
+              "main": "發言人",
+              "sub": []
+            },
+            {
+              "main": "發言人職稱",
+              "sub": []
+            },
+            {
+              "main": "發言人電話",
+              "sub": []
+            },
+            {
+              "main": "主旨",
+              "sub": []
+            },
+            {
+              "main": "符合條款",
+              "sub": []
+            },
+            {
+              "main": "事實發生日",
+              "sub": []
+            },
+            {
+              "main": "說明",
+              "sub": []
+            }
+          ],
+          "companyAbbreviation": "老爺知"
+        },
+        "datetime": "115/01/22 11:46:53"
+      },
+      "fetched_at_tw": "2026-01-22 11:46:42"
+    },
+    {
+      "key": "1150122|otc|5704|2",
+      "speech_date": "115/01/22",
+      "speech_time": "10:09:41",
+      "company_id": "5704",
+      "company_name": "老爺知",
+      "subject": "本公司114年現金增資發行新股催繳公告。",
+      "matched_keywords": [
+        "現金增資"
+      ],
+      "detail_params": {
+        "enterDate": "1150122",
+        "serialNumber": 2,
+        "companyId": "5704",
+        "marketKind": "otc"
+      },
+      "detail": {
+        "code": 200,
+        "message": "查詢成功",
+        "result": {
+          "marketName": "上櫃公司",
+          "companyId": "5704",
+          "data": [
+            [
+              2,
+              "115/01/22",
+              "10:09:41",
+              "盧炳宏",
+              "財務長",
+              "089510680-830",
+              "本公司114年現金增資發行新股催繳公告。",
+              "53",
+              "115/01/22",
+              "1.事實發生日:115/01/22\n2.公司名稱:知本老爺大酒店股份有限公司\n3.與公司關係(請輸入本公司或子公司):本公司\n4.相互持股比例:不適用\n5.發生緣由:本公司現金增資發行新股認股繳款期限已於115年1月21\n日截止，依公司法第266條第3項準用同法第142條之規定辦理，訂\n定自115年1月22日至115年02月23日下午3時30分止為尚未繳款之原\n股東及認股員工之催告繳款期限。\n6.因應措施:\n(1)尚未繳款之股東及認股員工，請於前述期間內，持原繳款書至\n台新國際商業銀行股份有限公司建北分行及全台各分行辦理繳款事\n宜，逾期未繳款者即喪失其認股之權利。\n(2)於催繳期間繳款之股東及員工，本公司將於催繳期間屆滿並經\n集保結算所作業後，依所認購之股數，撥入所登記之集保帳號。\n(3)若有任何疑問，請洽詢本公司股務代理機構「台新綜合證券股\n務代理部」(地址：台北市建國北路一段九十六號地下一樓；電話：\n(02)2504-8125)。\n7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，\n本則重大訊息同時符合證券交易法施行細則第7條第9款所定\n對股東權益或證券價格有重大影響之事項):無。"
+            ]
+          ],
+          "footer": [
+            "以上資料均由各公司依發言當時所屬市場別之規定申報後，由本系統對外公佈，資料如有虛偽不實，均由該公司負責。"
+          ],
+          "header": {
+            "note": [],
+            "subTitle": [],
+            "mainTitle": [
+              "公司當日重大訊息之詳細內容"
+            ]
+          },
+          "titles": [
+            {
+              "main": "序號",
+              "sub": []
+            },
+            {
+              "main": "發言日期",
+              "sub": []
+            },
+            {
+              "main": "發言時間",
+              "sub": []
+            },
+            {
+              "main": "發言人",
+              "sub": []
+            },
+            {
+              "main": "發言人職稱",
+              "sub": []
+            },
+            {
+              "main": "發言人電話",
+              "sub": []
+            },
+            {
+              "main": "主旨",
+              "sub": []
+            },
+            {
+              "main": "符合條款",
+              "sub": []
+            },
+            {
+              "main": "事實發生日",
+              "sub": []
+            },
+            {
+              "main": "說明",
+              "sub": []
+            }
+          ],
+          "companyAbbreviation": "老爺知"
+        },
+        "datetime": "115/01/22 11:46:54"
+      },
+      "fetched_at_tw": "2026-01-22 11:46:42"
+    },
+    {
+      "key": "1150122|rotc|6934|1",
+      "speech_date": "115/01/22",
+      "speech_time": "10:57:34",
+      "company_id": "6934",
+      "company_name": "心誠鎂",
+      "subject": "公告本公司股票初次上市前現金增資發行新股承銷價格",
+      "matched_keywords": [
+        "現金增資"
+      ],
+      "detail_params": {
+        "enterDate": "1150122",
+        "serialNumber": 1,
+        "companyId": "6934",
+        "marketKind": "rotc"
+      },
+      "detail": {
+        "code": 200,
+        "message": "查詢成功",
+        "result": {
+          "marketName": "興櫃公司",
+          "companyId": "6934",
+          "data": [
+            [
+              1,
+              "115/01/22",
+              "10:57:34",
+              "杜維誠",
+              "財務長",
+              "02-27326596",
+              "公告本公司股票初次上市前現金增資發行新股承銷價格",
+              "44",
+              "115/01/22",
+              "1.事實發生日:115/01/22\n2.公司名稱:心誠鎂行動醫電股份有限公司\n3.與公司關係(請輸入本公司或子公司):本公司\n4.相互持股比例:不適用\n5.發生緣由:公告本公司股票初次上市前現金增資發行新股承銷價格\n6.因應措施:無\n7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，\n本則重大訊息同時符合證券交易法施行細則第7條第9款所定\n對股東權益或證券價格有重大影響之事項):\n一、本公司為配合初次上市前公開承銷辦理現金增資新台幣\n32,560,000元，發行普通股3,256,000股，每股面額新台幣10元，業\n經臺灣證券交易所股份有限公司114年11月18日臺證上一字第1141804891\n號函申報生效在案。\n二、本次現金增資採溢價方式辦理，競價拍賣最低承銷價格為每股\n新台幣40元，依投標價格高者優先得標，每一得標人應依其得標價\n格認購，各得標單之價格及其數量加權平均價格為新台幣127.41元，\n高於最低承銷價格之1.20倍，故公開申購承銷價格以每股新台幣48\n元溢價發行。\n三、本次現金增資發行新股之權利義務與原已發行普通股相同。"
+            ]
+          ],
+          "footer": [
+            "以上資料均由各公司依發言當時所屬市場別之規定申報後，由本系統對外公佈，資料如有虛偽不實，均由該公司負責。"
+          ],
+          "header": {
+            "note": [],
+            "subTitle": [],
+            "mainTitle": [
+              "公司當日重大訊息之詳細內容"
+            ]
+          },
+          "titles": [
+            {
+              "main": "序號",
+              "sub": []
+            },
+            {
+              "main": "發言日期",
+              "sub": []
+            },
+            {
+              "main": "發言時間",
+              "sub": []
+            },
+            {
+              "main": "發言人",
+              "sub": []
+            },
+            {
+              "main": "發言人職稱",
+              "sub": []
+            },
+            {
+              "main": "發言人電話",
+              "sub": []
+            },
+            {
+              "main": "主旨",
+              "sub": []
+            },
+            {
+              "main": "符合條款",
+              "sub": []
+            },
+            {
+              "main": "事實發生日",
+              "sub": []
+            },
+            {
+              "main": "說明",
+              "sub": []
+            }
+          ],
+          "companyAbbreviation": "心誠鎂"
+        },
+        "datetime": "115/01/22 11:46:55"
+      },
+      "fetched_at_tw": "2026-01-22 11:46:42"
     }
   ]
 }
