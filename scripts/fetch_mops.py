@@ -294,9 +294,9 @@ def main():
     # 3) 通知（只通知「新命中」）
     if new_matched_items:
         lines = []
-        lines.append(f"📣 MOPS 新公告命中 {len(new_matched_items)} 筆（{speech_date}）")
+        lines.append(f"📣 MOPS 新公告命中 {len(new_matched_items)} 筆（{now_tw}）")
         for it in new_matched_items[:10]:  # 避免一次太長
-            lines.append(f"- {it['company_id']} {it['company_name']} {it['speech_time']} {it['subject']}")
+            lines.append(f"- {it['company_id']} {it['company_name']} {it['speech_date']} {it['speech_time']} {it['subject']}")
         if len(new_matched_items) > 10:
             lines.append(f"... 另有 {len(new_matched_items)-10} 筆")
 
