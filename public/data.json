@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-24 16:25:31",
+    "run_at_tw": "2026-01-24 16:49:05",
     "query": {
       "year": "115",
       "month": "1",
@@ -32,10 +32,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150123",
-        "marketKind": "sii",
-        "companyId": "4104"
+        "serialNumber": 1,
+        "companyId": "4104",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "佳醫"
         },
-        "datetime": "115/01/24 16:25:32"
+        "datetime": "115/01/24 16:49:09"
       },
-      "fetched_at_tw": "2026-01-24 16:25:31"
+      "fetched_at_tw": "2026-01-24 16:49:05"
     },
     {
       "key": "1150123|sii|1605|2",
@@ -126,10 +126,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150123",
-        "marketKind": "sii",
-        "companyId": "1605"
+        "serialNumber": 2,
+        "companyId": "1605",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "華新"
         },
-        "datetime": "115/01/24 16:25:33"
+        "datetime": "115/01/24 16:49:11"
       },
-      "fetched_at_tw": "2026-01-24 16:25:31"
+      "fetched_at_tw": "2026-01-24 16:49:05"
     },
     {
       "key": "1150123|sii|2467|1",
@@ -220,10 +220,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150123",
-        "marketKind": "sii",
-        "companyId": "2467"
+        "serialNumber": 1,
+        "companyId": "2467",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "志聖"
         },
-        "datetime": "115/01/24 16:25:34"
+        "datetime": "115/01/24 16:49:13"
       },
-      "fetched_at_tw": "2026-01-24 16:25:31"
+      "fetched_at_tw": "2026-01-24 16:49:05"
     },
     {
       "key": "1150122|sii|3715|2",
@@ -314,10 +314,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150122",
-        "marketKind": "sii",
-        "companyId": "3715"
+        "serialNumber": 2,
+        "companyId": "3715",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/01/24 16:25:35"
+        "datetime": "115/01/24 16:49:15"
       },
-      "fetched_at_tw": "2026-01-24 16:25:31"
+      "fetched_at_tw": "2026-01-24 16:49:05"
     }
   ]
 }
