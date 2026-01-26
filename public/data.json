@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-26 11:56:03",
+    "run_at_tw": "2026-01-26 12:55:51",
     "query": {
       "year": "115",
       "month": "1",
@@ -18,7 +18,7 @@
       "庫藏股"
     ],
     "matched_count": 1,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "安邦生技"
         },
-        "datetime": "115/01/26 11:56:05"
+        "datetime": "115/01/26 12:55:54"
       },
-      "fetched_at_tw": "2026-01-26 11:56:03"
+      "fetched_at_tw": "2026-01-26 12:55:51"
     }
   ]
 }
