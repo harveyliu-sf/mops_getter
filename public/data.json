@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-27 07:44:56",
+    "run_at_tw": "2026-01-27 09:46:41",
     "query": {
       "year": "115",
       "month": "1",
@@ -32,10 +32,10 @@
         "私募普通股"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150123",
-        "marketKind": "otc",
-        "companyId": "3230"
+        "serialNumber": 1,
+        "companyId": "3230",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "錦明"
         },
-        "datetime": "115/01/27 07:44:57"
+        "datetime": "115/01/27 09:46:45"
       },
-      "fetched_at_tw": "2026-01-27 07:44:56"
+      "fetched_at_tw": "2026-01-27 09:46:41"
     },
     {
       "key": "1150126|otc|3522|3",
@@ -126,10 +126,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150126",
-        "marketKind": "otc",
-        "companyId": "3522"
+        "serialNumber": 3,
+        "companyId": "3522",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "御嵿"
         },
-        "datetime": "115/01/27 07:44:58"
+        "datetime": "115/01/27 09:46:46"
       },
-      "fetched_at_tw": "2026-01-27 07:44:56"
+      "fetched_at_tw": "2026-01-27 09:46:41"
     },
     {
       "key": "1150126|rotc|6892|2",
@@ -220,10 +220,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150126",
-        "marketKind": "rotc",
-        "companyId": "6892"
+        "serialNumber": 2,
+        "companyId": "6892",
+        "marketKind": "rotc"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "台寶生醫"
         },
-        "datetime": "115/01/27 07:44:59"
+        "datetime": "115/01/27 09:46:47"
       },
-      "fetched_at_tw": "2026-01-27 07:44:56"
+      "fetched_at_tw": "2026-01-27 09:46:41"
     },
     {
       "key": "1150126|pub|7784|2",
@@ -314,10 +314,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150126",
-        "marketKind": "pub",
-        "companyId": "7784"
+        "serialNumber": 2,
+        "companyId": "7784",
+        "marketKind": "pub"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "安邦生技"
         },
-        "datetime": "115/01/27 07:45:00"
+        "datetime": "115/01/27 09:46:47"
       },
-      "fetched_at_tw": "2026-01-27 07:44:56"
+      "fetched_at_tw": "2026-01-27 09:46:41"
     }
   ]
 }
