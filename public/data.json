@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-01-28 11:43:47",
+    "run_at_tw": "2026-01-28 12:42:30",
     "query": {
       "year": "115",
       "month": "1",
@@ -18,7 +18,7 @@
       "庫藏股"
     ],
     "matched_count": 11,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/01/28 11:43:49"
+        "datetime": "115/01/28 12:42:33"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150127|sii|2317|1",
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "鴻海"
         },
-        "datetime": "115/01/28 11:43:50"
+        "datetime": "115/01/28 12:42:34"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150127|sii|2206|1",
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "三陽工業"
         },
-        "datetime": "115/01/28 11:43:51"
+        "datetime": "115/01/28 12:42:35"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150127|sii|4927|1",
@@ -395,9 +395,9 @@
           ],
           "companyAbbreviation": "泰鼎-KY"
         },
-        "datetime": "115/01/28 11:43:52"
+        "datetime": "115/01/28 12:42:35"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150127|sii|3416|2",
@@ -489,9 +489,9 @@
           ],
           "companyAbbreviation": "融程電"
         },
-        "datetime": "115/01/28 11:43:52"
+        "datetime": "115/01/28 12:42:37"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150128|sii|6835|1",
@@ -583,9 +583,9 @@
           ],
           "companyAbbreviation": "圓裕"
         },
-        "datetime": "115/01/28 11:43:53"
+        "datetime": "115/01/28 12:42:37"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150128|sii|3605|1",
@@ -678,9 +678,9 @@
           ],
           "companyAbbreviation": "宏致"
         },
-        "datetime": "115/01/28 11:43:53"
+        "datetime": "115/01/28 12:42:38"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150127|rotc|4587|1",
@@ -772,9 +772,9 @@
           ],
           "companyAbbreviation": "寶元數控"
         },
-        "datetime": "115/01/28 11:43:54"
+        "datetime": "115/01/28 12:42:39"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150127|rotc|6847|1",
@@ -866,9 +866,9 @@
           ],
           "companyAbbreviation": "普瑞博"
         },
-        "datetime": "115/01/28 11:43:54"
+        "datetime": "115/01/28 12:42:40"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150127|rotc|6847|2",
@@ -960,9 +960,9 @@
           ],
           "companyAbbreviation": "普瑞博"
         },
-        "datetime": "115/01/28 11:43:55"
+        "datetime": "115/01/28 12:42:40"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     },
     {
       "key": "1150127|pub|7823|1",
@@ -1054,9 +1054,9 @@
           ],
           "companyAbbreviation": "奧義賽博-KY"
         },
-        "datetime": "115/01/28 11:43:56"
+        "datetime": "115/01/28 12:42:41"
       },
-      "fetched_at_tw": "2026-01-28 11:43:47"
+      "fetched_at_tw": "2026-01-28 12:42:30"
     }
   ]
 }
