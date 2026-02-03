@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-04 06:58:26",
+    "run_at_tw": "2026-02-04 07:35:17",
     "query": {
       "year": "115",
       "month": "2",
@@ -32,10 +32,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150203",
-        "marketKind": "sii",
-        "companyId": "1563"
+        "serialNumber": 1,
+        "companyId": "1563",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "巧新"
         },
-        "datetime": "115/02/04 06:58:27"
+        "datetime": "115/02/04 07:35:18"
       },
-      "fetched_at_tw": "2026-02-04 06:58:26"
+      "fetched_at_tw": "2026-02-04 07:35:17"
     },
     {
       "key": "1150203|otc|4130|1",
@@ -126,10 +126,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150203",
-        "marketKind": "otc",
-        "companyId": "4130"
+        "serialNumber": 1,
+        "companyId": "4130",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "健亞"
         },
-        "datetime": "115/02/04 06:58:28"
+        "datetime": "115/02/04 07:35:20"
       },
-      "fetched_at_tw": "2026-02-04 06:58:26"
+      "fetched_at_tw": "2026-02-04 07:35:17"
     },
     {
       "key": "1150203|rotc|3659|3",
@@ -220,10 +220,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150203",
-        "marketKind": "rotc",
-        "companyId": "3659"
+        "serialNumber": 3,
+        "companyId": "3659",
+        "marketKind": "rotc"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "百辰"
         },
-        "datetime": "115/02/04 06:58:28"
+        "datetime": "115/02/04 07:35:21"
       },
-      "fetched_at_tw": "2026-02-04 06:58:26"
+      "fetched_at_tw": "2026-02-04 07:35:17"
     }
   ]
 }
