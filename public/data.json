@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-03 12:26:02",
+    "run_at_tw": "2026-02-03 13:34:14",
     "query": {
       "year": "115",
       "month": "2",
@@ -17,8 +17,8 @@
       "公司債",
       "庫藏股"
     ],
-    "matched_count": 5,
-    "new_matched_count": 0
+    "matched_count": 6,
+    "new_matched_count": 1
   },
   "items": [
     {
@@ -32,10 +32,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150202",
-        "marketKind": "sii",
-        "companyId": "2338"
+        "serialNumber": 1,
+        "companyId": "2338",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "光罩"
         },
-        "datetime": "115/02/03 12:26:02"
+        "datetime": "115/02/03 13:34:15"
       },
-      "fetched_at_tw": "2026-02-03 12:26:02"
+      "fetched_at_tw": "2026-02-03 13:34:14"
     },
     {
       "key": "1150202|otc|5230|1",
@@ -126,10 +126,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150202",
-        "marketKind": "otc",
-        "companyId": "5230"
+        "serialNumber": 1,
+        "companyId": "5230",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "雷笛克光學"
         },
-        "datetime": "115/02/03 12:26:03"
+        "datetime": "115/02/03 13:34:17"
       },
-      "fetched_at_tw": "2026-02-03 12:26:02"
+      "fetched_at_tw": "2026-02-03 13:34:14"
     },
     {
       "key": "1150202|otc|6841|4",
@@ -220,10 +220,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 4,
         "enterDate": "1150202",
-        "marketKind": "otc",
-        "companyId": "6841"
+        "serialNumber": 4,
+        "companyId": "6841",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "長佳智能"
         },
-        "datetime": "115/02/03 12:26:04"
+        "datetime": "115/02/03 13:34:18"
       },
-      "fetched_at_tw": "2026-02-03 12:26:02"
+      "fetched_at_tw": "2026-02-03 13:34:14"
     },
     {
       "key": "1150202|otc|6264|1",
@@ -314,10 +314,10 @@
         "自結合併"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150202",
-        "marketKind": "otc",
-        "companyId": "6264"
+        "serialNumber": 1,
+        "companyId": "6264",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "富裔"
         },
-        "datetime": "115/02/03 12:26:06"
+        "datetime": "115/02/03 13:34:19"
       },
-      "fetched_at_tw": "2026-02-03 12:26:02"
+      "fetched_at_tw": "2026-02-03 13:34:14"
     },
     {
       "key": "1150202|otc|8477|1",
@@ -408,10 +408,10 @@
         "私募普通股"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150202",
-        "marketKind": "otc",
-        "companyId": "8477"
+        "serialNumber": 1,
+        "companyId": "8477",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -487,9 +487,103 @@
           ],
           "companyAbbreviation": "創業家"
         },
-        "datetime": "115/02/03 12:26:06"
+        "datetime": "115/02/03 13:34:20"
       },
-      "fetched_at_tw": "2026-02-03 12:26:02"
+      "fetched_at_tw": "2026-02-03 13:34:14"
+    },
+    {
+      "key": "1150202|otc|2755|1",
+      "speech_date": "115/02/03",
+      "speech_time": "13:32:43",
+      "company_id": "2755",
+      "company_name": "揚秦",
+      "subject": "公告本公司董事會訂定國內第一次無擔保轉換公司債轉換發行新股之增資基準日",
+      "matched_keywords": [
+        "公司債"
+      ],
+      "detail_params": {
+        "enterDate": "1150202",
+        "serialNumber": 1,
+        "companyId": "2755",
+        "marketKind": "otc"
+      },
+      "detail": {
+        "code": 200,
+        "message": "查詢成功",
+        "result": {
+          "marketName": "上櫃公司",
+          "companyId": "2755",
+          "data": [
+            [
+              1,
+              "115/02/03",
+              "13:32:43",
+              "蔡國憲",
+              "總經理室專案處長",
+              "03-3412298",
+              "公告本公司董事會訂定國內第一次\r\n無擔保轉換公司債轉換發行新股之增資基準日",
+              "11",
+              "115/02/03",
+              "1.董事會決議日期:115/02/03\n2.增資資金來源:國內第一次無擔保轉換公司債轉換。\n3.是否採總括申報發行新股(是，請併敘明預定發行期間/否):否\n4.全案發行總金額及股數(如屬盈餘或公積轉增資，發行股數則不含配發給員工部分):\n發行總金額:新台幣1,776,140元\n發行股數: 177,614股\n5.採總括申報發行新股案件，本次發行金額及股數:不適用。\n6.採總括申報發行新股案件，本次發行後，剩餘之金額及股數餘額:不適用。\n7.每股面額:新台幣10元。\n8.發行價格:不適用。\n9.員工認購股數或配發金額:不適用。\n10.公開銷售股數:不適用。\n11.原股東認購或無償配發比例(請註明暫定每仟股認購或配發股數):不適用。\n12.畸零股及逾期未認購股份之處理方式:不適用。\n13.本次發行新股之權利義務:與原流通在外股份相同。\n14.本次增資資金用途:不適用。\n15.其他應敘明事項:\n訂定115年02月04日為公司債轉換普通股之增資基準日\n，並依法令規定辦理相關變更登記事宜。"
+            ]
+          ],
+          "footer": [
+            "以上資料均由各公司依發言當時所屬市場別之規定申報後，由本系統對外公佈，資料如有虛偽不實，均由該公司負責。"
+          ],
+          "header": {
+            "note": [],
+            "subTitle": [],
+            "mainTitle": [
+              "公司當日重大訊息之詳細內容"
+            ]
+          },
+          "titles": [
+            {
+              "main": "序號",
+              "sub": []
+            },
+            {
+              "main": "發言日期",
+              "sub": []
+            },
+            {
+              "main": "發言時間",
+              "sub": []
+            },
+            {
+              "main": "發言人",
+              "sub": []
+            },
+            {
+              "main": "發言人職稱",
+              "sub": []
+            },
+            {
+              "main": "發言人電話",
+              "sub": []
+            },
+            {
+              "main": "主旨",
+              "sub": []
+            },
+            {
+              "main": "符合條款",
+              "sub": []
+            },
+            {
+              "main": "事實發生日",
+              "sub": []
+            },
+            {
+              "main": "說明",
+              "sub": []
+            }
+          ],
+          "companyAbbreviation": "揚秦"
+        },
+        "datetime": "115/02/03 13:34:21"
+      },
+      "fetched_at_tw": "2026-02-03 13:34:14"
     }
   ]
 }
