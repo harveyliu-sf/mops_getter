@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-05 06:26:35",
+    "run_at_tw": "2026-02-05 06:52:48",
     "query": {
       "year": "115",
       "month": "2",
@@ -32,10 +32,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150203",
-        "marketKind": "sii",
-        "companyId": "2882"
+        "serialNumber": 1,
+        "companyId": "2882",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "國泰金"
         },
-        "datetime": "115/02/05 06:26:37"
+        "datetime": "115/02/05 06:52:49"
       },
-      "fetched_at_tw": "2026-02-05 06:26:35"
+      "fetched_at_tw": "2026-02-05 06:52:48"
     },
     {
       "key": "1150204|sii|2882|4",
@@ -126,10 +126,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 4,
         "enterDate": "1150204",
-        "marketKind": "sii",
-        "companyId": "2882"
+        "serialNumber": 4,
+        "companyId": "2882",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "國泰金"
         },
-        "datetime": "115/02/05 06:26:38"
+        "datetime": "115/02/05 06:52:49"
       },
-      "fetched_at_tw": "2026-02-05 06:26:35"
+      "fetched_at_tw": "2026-02-05 06:52:48"
     }
   ]
 }
