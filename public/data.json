@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-07 05:29:08",
+    "run_at_tw": "2026-02-07 05:54:08",
     "query": {
       "year": "115",
       "month": "2",
@@ -32,10 +32,10 @@
         "私募普通股"
       ],
       "detail_params": {
-        "enterDate": "1150206",
         "serialNumber": 1,
-        "companyId": "8435",
-        "marketKind": "otc"
+        "enterDate": "1150206",
+        "marketKind": "otc",
+        "companyId": "8435"
       },
       "detail": {
         "code": 200,
@@ -69,51 +69,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "鉅邁"
         },
-        "datetime": "115/02/07 05:29:10"
+        "datetime": "115/02/07 05:54:10"
       },
-      "fetched_at_tw": "2026-02-07 05:29:08"
+      "fetched_at_tw": "2026-02-07 05:54:08"
     }
   ]
 }
