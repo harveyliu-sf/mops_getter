@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-07 13:26:20",
+    "run_at_tw": "2026-02-07 14:02:48",
     "query": {
       "year": "115",
       "month": "2",
@@ -32,10 +32,10 @@
         "私募普通股"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150206",
-        "marketKind": "otc",
-        "companyId": "8435"
+        "serialNumber": 1,
+        "companyId": "8435",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "鉅邁"
         },
-        "datetime": "115/02/07 13:26:21"
+        "datetime": "115/02/07 14:02:49"
       },
-      "fetched_at_tw": "2026-02-07 13:26:20"
+      "fetched_at_tw": "2026-02-07 14:02:48"
     }
   ]
 }
