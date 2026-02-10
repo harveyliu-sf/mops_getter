@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-10 11:38:36",
+    "run_at_tw": "2026-02-10 13:26:38",
     "query": {
       "year": "115",
       "month": "2",
@@ -18,7 +18,7 @@
       "庫藏股"
     ],
     "matched_count": 6,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -32,10 +32,10 @@
         "自結合併"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150209",
-        "marketKind": "sii",
-        "companyId": "9941"
+        "serialNumber": 1,
+        "companyId": "9941",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "裕融"
         },
-        "datetime": "115/02/10 11:38:39"
+        "datetime": "115/02/10 13:26:41"
       },
-      "fetched_at_tw": "2026-02-10 11:38:36"
+      "fetched_at_tw": "2026-02-10 13:26:38"
     },
     {
       "key": "1150209|sii|9940|4",
@@ -126,10 +126,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 4,
         "enterDate": "1150209",
-        "marketKind": "sii",
-        "companyId": "9940"
+        "serialNumber": 4,
+        "companyId": "9940",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "信義"
         },
-        "datetime": "115/02/10 11:38:40"
+        "datetime": "115/02/10 13:26:43"
       },
-      "fetched_at_tw": "2026-02-10 11:38:36"
+      "fetched_at_tw": "2026-02-10 13:26:38"
     },
     {
       "key": "1150209|otc|6584|3",
@@ -220,10 +220,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150209",
-        "marketKind": "otc",
-        "companyId": "6584"
+        "serialNumber": 3,
+        "companyId": "6584",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "南俊國際"
         },
-        "datetime": "115/02/10 11:38:41"
+        "datetime": "115/02/10 13:26:44"
       },
-      "fetched_at_tw": "2026-02-10 11:38:36"
+      "fetched_at_tw": "2026-02-10 13:26:38"
     },
     {
       "key": "1150209|otc|6907|7",
@@ -314,10 +314,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 7,
         "enterDate": "1150209",
-        "marketKind": "otc",
-        "companyId": "6907"
+        "serialNumber": 7,
+        "companyId": "6907",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "雅特力-KY"
         },
-        "datetime": "115/02/10 11:38:43"
+        "datetime": "115/02/10 13:26:45"
       },
-      "fetched_at_tw": "2026-02-10 11:38:36"
+      "fetched_at_tw": "2026-02-10 13:26:38"
     },
     {
       "key": "1150209|otc|5457|2",
@@ -408,10 +408,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 2,
         "enterDate": "1150209",
-        "marketKind": "otc",
-        "companyId": "5457"
+        "serialNumber": 2,
+        "companyId": "5457",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "宣德"
         },
-        "datetime": "115/02/10 11:38:43"
+        "datetime": "115/02/10 13:26:46"
       },
-      "fetched_at_tw": "2026-02-10 11:38:36"
+      "fetched_at_tw": "2026-02-10 13:26:38"
     },
     {
       "key": "1150209|sii|9105|1",
@@ -502,18 +502,18 @@
         "自結合併"
       ],
       "detail_params": {
-        "serialNumber": 1,
         "enterDate": "1150209",
-        "marketKind": "sii",
-        "companyId": "9105"
+        "serialNumber": 1,
+        "companyId": "9105",
+        "marketKind": "sii"
       },
       "detail": {
         "code": 406,
         "message": "查無相符資料",
         "result": null,
-        "datetime": "115/02/10 11:38:44"
+        "datetime": "115/02/10 13:26:46"
       },
-      "fetched_at_tw": "2026-02-10 11:38:36"
+      "fetched_at_tw": "2026-02-10 13:26:38"
     }
   ]
 }
