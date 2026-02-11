@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-12 03:54:31",
+    "run_at_tw": "2026-02-12 04:37:01",
     "query": {
       "year": "115",
       "month": "2",
@@ -32,10 +32,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150211",
-        "marketKind": "otc",
-        "companyId": "5347"
+        "serialNumber": 3,
+        "companyId": "5347",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "世界"
         },
-        "datetime": "115/02/12 03:54:32"
+        "datetime": "115/02/12 04:37:03"
       },
-      "fetched_at_tw": "2026-02-12 03:54:31"
+      "fetched_at_tw": "2026-02-12 04:37:01"
     },
     {
       "key": "1150211|otc|5347|4",
@@ -126,10 +126,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 4,
         "enterDate": "1150211",
-        "marketKind": "otc",
-        "companyId": "5347"
+        "serialNumber": 4,
+        "companyId": "5347",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "世界"
         },
-        "datetime": "115/02/12 03:54:33"
+        "datetime": "115/02/12 04:37:04"
       },
-      "fetched_at_tw": "2026-02-12 03:54:31"
+      "fetched_at_tw": "2026-02-12 04:37:01"
     },
     {
       "key": "1150211|otc|6111|3",
@@ -220,10 +220,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "serialNumber": 3,
         "enterDate": "1150211",
-        "marketKind": "otc",
-        "companyId": "6111"
+        "serialNumber": 3,
+        "companyId": "6111",
+        "marketKind": "otc"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "光聚晶電"
         },
-        "datetime": "115/02/12 03:54:34"
+        "datetime": "115/02/12 04:37:05"
       },
-      "fetched_at_tw": "2026-02-12 03:54:31"
+      "fetched_at_tw": "2026-02-12 04:37:01"
     }
   ]
 }
