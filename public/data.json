@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-11 11:33:35",
+    "run_at_tw": "2026-02-11 13:26:00",
     "query": {
       "year": "115",
       "month": "2",
@@ -32,10 +32,10 @@
         "公司債"
       ],
       "detail_params": {
-        "enterDate": "1150210",
         "serialNumber": 6,
-        "companyId": "2344",
-        "marketKind": "sii"
+        "enterDate": "1150210",
+        "marketKind": "sii",
+        "companyId": "2344"
       },
       "detail": {
         "code": 200,
@@ -69,51 +69,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "華邦電"
         },
-        "datetime": "115/02/11 11:33:38"
+        "datetime": "115/02/11 13:26:03"
       },
-      "fetched_at_tw": "2026-02-11 11:33:35"
+      "fetched_at_tw": "2026-02-11 13:26:00"
     },
     {
       "key": "1150210|sii|3038|1",
@@ -126,10 +126,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "enterDate": "1150210",
         "serialNumber": 1,
-        "companyId": "3038",
-        "marketKind": "sii"
+        "enterDate": "1150210",
+        "marketKind": "sii",
+        "companyId": "3038"
       },
       "detail": {
         "code": 200,
@@ -163,51 +163,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "全台"
         },
-        "datetime": "115/02/11 11:33:39"
+        "datetime": "115/02/11 13:26:04"
       },
-      "fetched_at_tw": "2026-02-11 11:33:35"
+      "fetched_at_tw": "2026-02-11 13:26:00"
     },
     {
       "key": "1150210|sii|6278|1",
@@ -220,10 +220,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "enterDate": "1150210",
         "serialNumber": 1,
-        "companyId": "6278",
-        "marketKind": "sii"
+        "enterDate": "1150210",
+        "marketKind": "sii",
+        "companyId": "6278"
       },
       "detail": {
         "code": 200,
@@ -257,51 +257,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "台表科"
         },
-        "datetime": "115/02/11 11:33:40"
+        "datetime": "115/02/11 13:26:06"
       },
-      "fetched_at_tw": "2026-02-11 11:33:35"
+      "fetched_at_tw": "2026-02-11 13:26:00"
     },
     {
       "key": "1150210|sii|2330|10",
@@ -314,10 +314,10 @@
         "公司債"
       ],
       "detail_params": {
-        "enterDate": "1150210",
         "serialNumber": 10,
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150210",
+        "marketKind": "sii",
+        "companyId": "2330"
       },
       "detail": {
         "code": 200,
@@ -351,51 +351,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "台積電"
         },
-        "datetime": "115/02/11 11:33:41"
+        "datetime": "115/02/11 13:26:06"
       },
-      "fetched_at_tw": "2026-02-11 11:33:35"
+      "fetched_at_tw": "2026-02-11 13:26:00"
     },
     {
       "key": "1150210|otc|3529|1",
@@ -408,10 +408,10 @@
         "自結合併"
       ],
       "detail_params": {
-        "enterDate": "1150210",
         "serialNumber": 1,
-        "companyId": "3529",
-        "marketKind": "otc"
+        "enterDate": "1150210",
+        "marketKind": "otc",
+        "companyId": "3529"
       },
       "detail": {
         "code": 200,
@@ -445,51 +445,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "力旺"
         },
-        "datetime": "115/02/11 11:33:42"
+        "datetime": "115/02/11 13:26:07"
       },
-      "fetched_at_tw": "2026-02-11 11:33:35"
+      "fetched_at_tw": "2026-02-11 13:26:00"
     },
     {
       "key": "1150210|otc|6187|4",
@@ -502,10 +502,10 @@
         "公司債"
       ],
       "detail_params": {
-        "enterDate": "1150210",
         "serialNumber": 4,
-        "companyId": "6187",
-        "marketKind": "otc"
+        "enterDate": "1150210",
+        "marketKind": "otc",
+        "companyId": "6187"
       },
       "detail": {
         "code": 200,
@@ -539,51 +539,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "萬潤"
         },
-        "datetime": "115/02/11 11:33:43"
+        "datetime": "115/02/11 13:26:08"
       },
-      "fetched_at_tw": "2026-02-11 11:33:35"
+      "fetched_at_tw": "2026-02-11 13:26:00"
     },
     {
       "key": "1150210|otc|3122|3",
@@ -596,10 +596,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "enterDate": "1150210",
         "serialNumber": 3,
-        "companyId": "3122",
-        "marketKind": "otc"
+        "enterDate": "1150210",
+        "marketKind": "otc",
+        "companyId": "3122"
       },
       "detail": {
         "code": 200,
@@ -633,51 +633,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "笙泉"
         },
-        "datetime": "115/02/11 11:33:44"
+        "datetime": "115/02/11 13:26:08"
       },
-      "fetched_at_tw": "2026-02-11 11:33:35"
+      "fetched_at_tw": "2026-02-11 13:26:00"
     },
     {
       "key": "1150210|rotc|7833|1",
@@ -690,10 +690,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "enterDate": "1150210",
         "serialNumber": 1,
-        "companyId": "7833",
-        "marketKind": "rotc"
+        "enterDate": "1150210",
+        "marketKind": "rotc",
+        "companyId": "7833"
       },
       "detail": {
         "code": 200,
@@ -727,51 +727,51 @@
           },
           "titles": [
             {
-              "main": "序號",
-              "sub": []
+              "sub": [],
+              "main": "序號"
             },
             {
-              "main": "發言日期",
-              "sub": []
+              "sub": [],
+              "main": "發言日期"
             },
             {
-              "main": "發言時間",
-              "sub": []
+              "sub": [],
+              "main": "發言時間"
             },
             {
-              "main": "發言人",
-              "sub": []
+              "sub": [],
+              "main": "發言人"
             },
             {
-              "main": "發言人職稱",
-              "sub": []
+              "sub": [],
+              "main": "發言人職稱"
             },
             {
-              "main": "發言人電話",
-              "sub": []
+              "sub": [],
+              "main": "發言人電話"
             },
             {
-              "main": "主旨",
-              "sub": []
+              "sub": [],
+              "main": "主旨"
             },
             {
-              "main": "符合條款",
-              "sub": []
+              "sub": [],
+              "main": "符合條款"
             },
             {
-              "main": "事實發生日",
-              "sub": []
+              "sub": [],
+              "main": "事實發生日"
             },
             {
-              "main": "說明",
-              "sub": []
+              "sub": [],
+              "main": "說明"
             }
           ],
           "companyAbbreviation": "綠岩能源"
         },
-        "datetime": "115/02/11 11:33:45"
+        "datetime": "115/02/11 13:26:09"
       },
-      "fetched_at_tw": "2026-02-11 11:33:35"
+      "fetched_at_tw": "2026-02-11 13:26:00"
     }
   ]
 }
