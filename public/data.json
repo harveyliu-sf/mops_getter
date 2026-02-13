@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-14 01:13:43",
+    "run_at_tw": "2026-02-14 02:03:03",
     "query": {
       "year": "115",
       "month": "2",
@@ -18,7 +18,7 @@
       "庫藏股"
     ],
     "matched_count": 7,
-    "new_matched_count": 1
+    "new_matched_count": 0
   },
   "items": [
     {
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "凱基金"
         },
-        "datetime": "115/02/14 01:13:45"
+        "datetime": "115/02/14 02:03:04"
       },
-      "fetched_at_tw": "2026-02-14 01:13:43"
+      "fetched_at_tw": "2026-02-14 02:03:03"
     },
     {
       "key": "1150211|sii|2308|1",
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "台達電"
         },
-        "datetime": "115/02/14 01:13:45"
+        "datetime": "115/02/14 02:03:05"
       },
-      "fetched_at_tw": "2026-02-14 01:13:43"
+      "fetched_at_tw": "2026-02-14 02:03:03"
     },
     {
       "key": "1150213|sii|2308|2",
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "台達電"
         },
-        "datetime": "115/02/14 01:13:46"
+        "datetime": "115/02/14 02:03:05"
       },
-      "fetched_at_tw": "2026-02-14 01:13:43"
+      "fetched_at_tw": "2026-02-14 02:03:03"
     },
     {
       "key": "1150213|sii|3715|1",
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/02/14 01:13:47"
+        "datetime": "115/02/14 02:03:06"
       },
-      "fetched_at_tw": "2026-02-14 01:13:43"
+      "fetched_at_tw": "2026-02-14 02:03:03"
     },
     {
       "key": "1150213|otc|4804|5",
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "大略-KY"
         },
-        "datetime": "115/02/14 01:13:48"
+        "datetime": "115/02/14 02:03:07"
       },
-      "fetched_at_tw": "2026-02-14 01:13:43"
+      "fetched_at_tw": "2026-02-14 02:03:03"
     },
     {
       "key": "1150213|rotc|4925|2",
@@ -581,9 +581,9 @@
           ],
           "companyAbbreviation": "智微"
         },
-        "datetime": "115/02/14 01:13:48"
+        "datetime": "115/02/14 02:03:07"
       },
-      "fetched_at_tw": "2026-02-14 01:13:43"
+      "fetched_at_tw": "2026-02-14 02:03:03"
     },
     {
       "key": "1150213|rotc|7530|3",
@@ -675,9 +675,9 @@
           ],
           "companyAbbreviation": "鋒魁科技"
         },
-        "datetime": "115/02/14 01:13:49"
+        "datetime": "115/02/14 02:03:08"
       },
-      "fetched_at_tw": "2026-02-14 01:13:43"
+      "fetched_at_tw": "2026-02-14 02:03:03"
     }
   ]
 }
