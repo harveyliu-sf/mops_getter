@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-14 13:29:01",
+    "run_at_tw": "2026-02-14 14:06:41",
     "query": {
       "year": "115",
       "month": "2",
@@ -17,8 +17,8 @@
       "公司債",
       "庫藏股"
     ],
-    "matched_count": 7,
-    "new_matched_count": 0
+    "matched_count": 8,
+    "new_matched_count": 1
   },
   "items": [
     {
@@ -32,10 +32,10 @@
         "自結合併"
       ],
       "detail_params": {
-        "serialNumber": 1,
-        "enterDate": "1150213",
         "marketKind": "sii",
-        "companyId": "2883"
+        "companyId": "2883",
+        "serialNumber": 1,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "凱基金"
         },
-        "datetime": "115/02/14 13:29:02"
+        "datetime": "115/02/14 14:06:43"
       },
-      "fetched_at_tw": "2026-02-14 13:29:01"
+      "fetched_at_tw": "2026-02-14 14:06:41"
     },
     {
       "key": "1150211|sii|2308|1",
@@ -126,10 +126,10 @@
         "資本支出"
       ],
       "detail_params": {
-        "serialNumber": 1,
-        "enterDate": "1150211",
         "marketKind": "sii",
-        "companyId": "2308"
+        "companyId": "2308",
+        "serialNumber": 1,
+        "enterDate": "1150211"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "台達電"
         },
-        "datetime": "115/02/14 13:29:03"
+        "datetime": "115/02/14 14:06:44"
       },
-      "fetched_at_tw": "2026-02-14 13:29:01"
+      "fetched_at_tw": "2026-02-14 14:06:41"
     },
     {
       "key": "1150213|sii|2308|2",
@@ -220,10 +220,10 @@
         "取得機器設備"
       ],
       "detail_params": {
-        "serialNumber": 2,
-        "enterDate": "1150213",
         "marketKind": "sii",
-        "companyId": "2308"
+        "companyId": "2308",
+        "serialNumber": 2,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "台達電"
         },
-        "datetime": "115/02/14 13:29:03"
+        "datetime": "115/02/14 14:06:45"
       },
-      "fetched_at_tw": "2026-02-14 13:29:01"
+      "fetched_at_tw": "2026-02-14 14:06:41"
     },
     {
       "key": "1150213|sii|3715|1",
@@ -314,10 +314,10 @@
         "資本支出"
       ],
       "detail_params": {
-        "serialNumber": 1,
-        "enterDate": "1150213",
         "marketKind": "sii",
-        "companyId": "3715"
+        "companyId": "3715",
+        "serialNumber": 1,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/02/14 13:29:04"
+        "datetime": "115/02/14 14:06:46"
       },
-      "fetched_at_tw": "2026-02-14 13:29:01"
+      "fetched_at_tw": "2026-02-14 14:06:41"
     },
     {
       "key": "1150213|otc|4804|5",
@@ -408,10 +408,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 5,
-        "enterDate": "1150213",
         "marketKind": "otc",
-        "companyId": "4804"
+        "companyId": "4804",
+        "serialNumber": 5,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -487,9 +487,103 @@
           ],
           "companyAbbreviation": "大略-KY"
         },
-        "datetime": "115/02/14 13:29:05"
+        "datetime": "115/02/14 14:06:47"
       },
-      "fetched_at_tw": "2026-02-14 13:29:01"
+      "fetched_at_tw": "2026-02-14 14:06:41"
+    },
+    {
+      "key": "1150214|otc|4105|1",
+      "speech_date": "115/02/14",
+      "speech_time": "14:01:42",
+      "company_id": "4105",
+      "company_name": "東洋",
+      "subject": "公告本公司115年1月份自結合併損益(更正事實發生日為115/02/13)",
+      "matched_keywords": [
+        "自結合併"
+      ],
+      "detail_params": {
+        "marketKind": "otc",
+        "companyId": "4105",
+        "serialNumber": 1,
+        "enterDate": "1150214"
+      },
+      "detail": {
+        "code": 200,
+        "message": "查詢成功",
+        "result": {
+          "marketName": "上櫃公司",
+          "companyId": "4105",
+          "data": [
+            [
+              1,
+              "115/02/14",
+              "14:01:42",
+              "張國江",
+              "財務長",
+              "26525999-2339",
+              "公告本公司115年1月份自結合併損益(更正事實發生日\r\n為115/02/13)",
+              "53",
+              "115/02/13",
+              "1.事實發生日:115/02/13\n2.公司名稱:台灣東洋藥品工業股份有限公司\n3.與公司關係(請輸入本公司或子公司):本公司\n4.相互持股比例:不適用\n5.發生緣由:\n台灣東洋115年1月份合併營業收入為新台幣(以下同)561,125仟元，合併營業利益\n為189,397仟元，合併稅前淨利為219,134仟元；歸屬於母公司業主之稅後淨利為\n167,971仟元；每股盈餘為0.68元。\n115年累計至1月份為止，合併營業收入為561,125仟元，合併營業利益為\n189,397仟元，合併稅前淨利為219,134仟元；歸屬於母公司業主之稅後淨利為\n167,971仟元；每股盈餘為0.68元。\n6.因應措施:無。\n7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，\n本則重大訊息同時符合證券交易法施行細則第7條第9款所定\n對股東權益或證券價格有重大影響之事項):上述自結數尚未經會計師查核或核閱，\n實際營收及獲利數字依本公司公告之每季經會計師簽證(核閱)之財務報告為準。"
+            ]
+          ],
+          "footer": [
+            "以上資料均由各公司依發言當時所屬市場別之規定申報後，由本系統對外公佈，資料如有虛偽不實，均由該公司負責。"
+          ],
+          "header": {
+            "note": [],
+            "subTitle": [],
+            "mainTitle": [
+              "公司當日重大訊息之詳細內容"
+            ]
+          },
+          "titles": [
+            {
+              "sub": [],
+              "main": "序號"
+            },
+            {
+              "sub": [],
+              "main": "發言日期"
+            },
+            {
+              "sub": [],
+              "main": "發言時間"
+            },
+            {
+              "sub": [],
+              "main": "發言人"
+            },
+            {
+              "sub": [],
+              "main": "發言人職稱"
+            },
+            {
+              "sub": [],
+              "main": "發言人電話"
+            },
+            {
+              "sub": [],
+              "main": "主旨"
+            },
+            {
+              "sub": [],
+              "main": "符合條款"
+            },
+            {
+              "sub": [],
+              "main": "事實發生日"
+            },
+            {
+              "sub": [],
+              "main": "說明"
+            }
+          ],
+          "companyAbbreviation": "東洋"
+        },
+        "datetime": "115/02/14 14:06:48"
+      },
+      "fetched_at_tw": "2026-02-14 14:06:41"
     },
     {
       "key": "1150213|rotc|4925|2",
@@ -502,10 +596,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "serialNumber": 2,
-        "enterDate": "1150213",
         "marketKind": "rotc",
-        "companyId": "4925"
+        "companyId": "4925",
+        "serialNumber": 2,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -581,9 +675,9 @@
           ],
           "companyAbbreviation": "智微"
         },
-        "datetime": "115/02/14 13:29:05"
+        "datetime": "115/02/14 14:06:49"
       },
-      "fetched_at_tw": "2026-02-14 13:29:01"
+      "fetched_at_tw": "2026-02-14 14:06:41"
     },
     {
       "key": "1150213|rotc|7530|3",
@@ -596,10 +690,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 3,
-        "enterDate": "1150213",
         "marketKind": "rotc",
-        "companyId": "7530"
+        "companyId": "7530",
+        "serialNumber": 3,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -675,9 +769,9 @@
           ],
           "companyAbbreviation": "鋒魁科技"
         },
-        "datetime": "115/02/14 13:29:06"
+        "datetime": "115/02/14 14:06:50"
       },
-      "fetched_at_tw": "2026-02-14 13:29:01"
+      "fetched_at_tw": "2026-02-14 14:06:41"
     }
   ]
 }
