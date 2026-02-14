@@ -1,6 +1,6 @@
 {
   "meta": {
-    "run_at_tw": "2026-02-14 19:44:29",
+    "run_at_tw": "2026-02-14 20:44:11",
     "query": {
       "year": "115",
       "month": "2",
@@ -32,10 +32,10 @@
         "自結合併"
       ],
       "detail_params": {
-        "serialNumber": 1,
-        "enterDate": "1150213",
         "marketKind": "sii",
-        "companyId": "2883"
+        "companyId": "2883",
+        "serialNumber": 1,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -111,9 +111,9 @@
           ],
           "companyAbbreviation": "凱基金"
         },
-        "datetime": "115/02/14 19:44:30"
+        "datetime": "115/02/14 20:44:13"
       },
-      "fetched_at_tw": "2026-02-14 19:44:29"
+      "fetched_at_tw": "2026-02-14 20:44:11"
     },
     {
       "key": "1150211|sii|2308|1",
@@ -126,10 +126,10 @@
         "資本支出"
       ],
       "detail_params": {
-        "serialNumber": 1,
-        "enterDate": "1150211",
         "marketKind": "sii",
-        "companyId": "2308"
+        "companyId": "2308",
+        "serialNumber": 1,
+        "enterDate": "1150211"
       },
       "detail": {
         "code": 200,
@@ -205,9 +205,9 @@
           ],
           "companyAbbreviation": "台達電"
         },
-        "datetime": "115/02/14 19:44:31"
+        "datetime": "115/02/14 20:44:14"
       },
-      "fetched_at_tw": "2026-02-14 19:44:29"
+      "fetched_at_tw": "2026-02-14 20:44:11"
     },
     {
       "key": "1150213|sii|2308|2",
@@ -220,10 +220,10 @@
         "取得機器設備"
       ],
       "detail_params": {
-        "serialNumber": 2,
-        "enterDate": "1150213",
         "marketKind": "sii",
-        "companyId": "2308"
+        "companyId": "2308",
+        "serialNumber": 2,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -299,9 +299,9 @@
           ],
           "companyAbbreviation": "台達電"
         },
-        "datetime": "115/02/14 19:44:32"
+        "datetime": "115/02/14 20:44:15"
       },
-      "fetched_at_tw": "2026-02-14 19:44:29"
+      "fetched_at_tw": "2026-02-14 20:44:11"
     },
     {
       "key": "1150213|sii|3715|1",
@@ -314,10 +314,10 @@
         "資本支出"
       ],
       "detail_params": {
-        "serialNumber": 1,
-        "enterDate": "1150213",
         "marketKind": "sii",
-        "companyId": "3715"
+        "companyId": "3715",
+        "serialNumber": 1,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -393,9 +393,9 @@
           ],
           "companyAbbreviation": "定穎投控"
         },
-        "datetime": "115/02/14 19:44:32"
+        "datetime": "115/02/14 20:44:16"
       },
-      "fetched_at_tw": "2026-02-14 19:44:29"
+      "fetched_at_tw": "2026-02-14 20:44:11"
     },
     {
       "key": "1150213|otc|4804|5",
@@ -408,10 +408,10 @@
         "公司債"
       ],
       "detail_params": {
-        "serialNumber": 5,
-        "enterDate": "1150213",
         "marketKind": "otc",
-        "companyId": "4804"
+        "companyId": "4804",
+        "serialNumber": 5,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -487,9 +487,9 @@
           ],
           "companyAbbreviation": "大略-KY"
         },
-        "datetime": "115/02/14 19:44:33"
+        "datetime": "115/02/14 20:44:17"
       },
-      "fetched_at_tw": "2026-02-14 19:44:29"
+      "fetched_at_tw": "2026-02-14 20:44:11"
     },
     {
       "key": "1150214|otc|4105|1",
@@ -502,10 +502,10 @@
         "自結合併"
       ],
       "detail_params": {
-        "serialNumber": 1,
-        "enterDate": "1150214",
         "marketKind": "otc",
-        "companyId": "4105"
+        "companyId": "4105",
+        "serialNumber": 1,
+        "enterDate": "1150214"
       },
       "detail": {
         "code": 200,
@@ -581,9 +581,9 @@
           ],
           "companyAbbreviation": "東洋"
         },
-        "datetime": "115/02/14 19:44:34"
+        "datetime": "115/02/14 20:44:18"
       },
-      "fetched_at_tw": "2026-02-14 19:44:29"
+      "fetched_at_tw": "2026-02-14 20:44:11"
     },
     {
       "key": "1150213|rotc|4925|2",
@@ -596,10 +596,10 @@
         "庫藏股"
       ],
       "detail_params": {
-        "serialNumber": 2,
-        "enterDate": "1150213",
         "marketKind": "rotc",
-        "companyId": "4925"
+        "companyId": "4925",
+        "serialNumber": 2,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -675,9 +675,9 @@
           ],
           "companyAbbreviation": "智微"
         },
-        "datetime": "115/02/14 19:44:35"
+        "datetime": "115/02/14 20:44:19"
       },
-      "fetched_at_tw": "2026-02-14 19:44:29"
+      "fetched_at_tw": "2026-02-14 20:44:11"
     },
     {
       "key": "1150213|rotc|7530|3",
@@ -690,10 +690,10 @@
         "現金增資"
       ],
       "detail_params": {
-        "serialNumber": 3,
-        "enterDate": "1150213",
         "marketKind": "rotc",
-        "companyId": "7530"
+        "companyId": "7530",
+        "serialNumber": 3,
+        "enterDate": "1150213"
       },
       "detail": {
         "code": 200,
@@ -769,9 +769,9 @@
           ],
           "companyAbbreviation": "鋒魁科技"
         },
-        "datetime": "115/02/14 19:44:36"
+        "datetime": "115/02/14 20:44:20"
       },
-      "fetched_at_tw": "2026-02-14 19:44:29"
+      "fetched_at_tw": "2026-02-14 20:44:11"
     }
   ]
 }
