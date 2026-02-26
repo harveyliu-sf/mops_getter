@@ -27,7 +27,6 @@ jobs:
           echo "---- show load_state lines ----"
           nl -ba scripts/fetch_mops.py | sed -n '50,90p'
 
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
